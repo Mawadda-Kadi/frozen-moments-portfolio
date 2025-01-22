@@ -1,0 +1,52 @@
+$hover-color: #ff6600;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #f8f8f8;
+
+    .header-left {
+        display: flex;
+        align-items: center;
+
+        .logo {
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        h1 {
+            margin-left: 1rem;
+            font-size: 1.5rem;
+            color: #333;
+        }
+    }
+
+    .navigation {
+        display: flex;
+        gap: 1.5rem;
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+
+            &:hover {
+                color: $hover-color;
+            }
+        }
+    }
+
+    .language-toggle {
+        padding: 0.5rem 1rem;
+        border: none;
+        background-color: #333;
+        color: #fff;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $hover-color;
+        }
+    }
+}

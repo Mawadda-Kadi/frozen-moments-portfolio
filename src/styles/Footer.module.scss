@@ -1,0 +1,15 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #f8f8f8;
+
+    a {
+        text-decoration: none;
+        color: #333;
+
+        &:hover {
+            color: #ff6600;
+        }
+    }
+}
