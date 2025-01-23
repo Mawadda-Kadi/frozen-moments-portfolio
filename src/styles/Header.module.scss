@@ -7,7 +7,7 @@ $hover-color: #ff6600;
     padding: 1rem 2rem;
     background-color: #f8f8f8;
 
-    .header-left {
+    .header_left {
         display: flex;
         align-items: center;
 
@@ -16,7 +16,7 @@ $hover-color: #ff6600;
             color: #333;
         }
 
-        h1 {
+        .title {
             margin-left: 1rem;
             font-size: 1.5rem;
             color: #333;
@@ -38,7 +38,7 @@ $hover-color: #ff6600;
         }
     }
 
-    .language-toggle {
+    .language_toggle {
         padding: 0.5rem 1rem;
         border: none;
         background-color: #333;

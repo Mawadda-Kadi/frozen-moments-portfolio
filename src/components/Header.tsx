@@ -15,18 +15,18 @@ const Header = () => {
     };
 
     return (
-        <header className="header">
-            <div className="header-left">
-                <Image src="/images/logo.png" alt="Logo" width={50} height={50} />
-                <h1>Frozen Moments von Emma Schmidt</h1>
+        <header className={styles.header}>
+        < div className = {styles.header_left}>
+                <Image className={styles.logo} src="/images/logo.png" alt="Logo" width={50} height={50} />
+                <h1 className={styles.title}>Frozen Moments von Emma Schmidt</h1>
             </div>
-            <nav className="navigation">
+            <nav className={styles.navigation}>
                 <Link href="/">Startseite</Link>
                 <Link href="/gallery">Galerie</Link>
                 <Link href="/about">Über mich</Link>
                 <Link href="/contact">Kontakt</Link>
             </nav>
-            <button className="language-toggle" onClick={toggleLanguage}>
+            <button className={styles.language_toggle} onClick={toggleLanguage}>
                 {language}
             </button>
         </header>
