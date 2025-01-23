@@ -18,7 +18,10 @@ const Header = () => {
         <header className={styles.header}>
         < div className = {styles.header_left}>
                 <Image className={styles.logo} src="/images/logo.png" alt="Logo" width={50} height={50} />
-                <h1 className={styles.title}>Frozen Moments von Emma Schmidt</h1>
+                <h1 className={styles.title}>
+                    <span className={styles.frozen_memory}>Frozen Moments</span>
+                    <span className={styles.name}>von Emma Schmidt</span>
+                </h1>
             </div>
             <nav className={styles.navigation}>
                 <Link href="/">Startseite</Link>

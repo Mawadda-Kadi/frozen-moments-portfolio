@@ -1,25 +1,53 @@
-$hover-color: #ff6600;
+$primary-color: #444444;
+$secondary-color: #F4A582;
+$hover-color: #F4A582;
+$title-font-family: var(--font-bree-serif), serif;
+$name-font-family: var(--font-oleo-script), cursive;
+$text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
 
 .header {
     display: flex;
     justify-content: space-between;
+    font-family: $title-font-family;
+    color: $primary-color;
     align-items: center;
-    padding: 1rem 2rem;
-    background-color: #f8f8f8;
+    padding: 0.8rem 2rem;
+    background-color:#F5DEB3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1px;
+
 
     .header_left {
         display: flex;
         align-items: center;
 
         .logo {
-            font-size: 1.5rem;
-            color: #333;
+            width: 100px;
+            height: auto;
+            margin-right: 1rem;
         }
 
         .title {
+            display: flex;
+            flex-wrap: wrap;
             margin-left: 1rem;
-            font-size: 1.5rem;
-            color: #333;
+
+
+            .frozen_memory {
+                font-size: 1.8rem;
+            }
+
+            .name {
+                font-family: $name-font-family;
+                font-size: 1.4rem;
+                font-weight: 400;
+                margin-left: 0.5rem;
+                color: $primary-color;
+                text-shadow: $text-shadow;
+                -webkit-text-stroke: 0.3px $secondary-color;
+
+            }
         }
     }
 
@@ -29,7 +57,7 @@ $hover-color: #ff6600;
 
         a {
             text-decoration: none;
-            color: #333;
+            color: $primary-color;
             font-weight: bold;
 
             &:hover {
@@ -41,7 +69,7 @@ $hover-color: #ff6600;
     .language_toggle {
         padding: 0.5rem 1rem;
         border: none;
-        background-color: #333;
+        background-color: $primary-color;
         color: #fff;
         cursor: pointer;
 
