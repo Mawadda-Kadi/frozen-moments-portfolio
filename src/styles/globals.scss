@@ -1,3 +1,5 @@
+@import '@/styles/_variables';
+
 /* Reset some default browser styles */
 * {
     margin: 0;
@@ -7,22 +9,21 @@
 
 /* Apply default styles to the body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fdf8f4;
-    /* Light cream background */
-    color: #333;
-    /* Dark text for readability */
+    font-family: $body-font;
+    background-color: $background-color;
+    color: $primary-color;
     line-height: 1.6;
 }
 
 /* Links */
 a {
-    color: #0070f3;
+    color: $primary-color;
     text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    color: $secondary-color;
 }
 
 /* Images */

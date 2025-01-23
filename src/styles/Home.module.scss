@@ -1,32 +1,58 @@
+
+@import '@/styles/_variables';
+
 .home {
     .hero {
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
-        background-color: #fff8e1;
-        padding: 2rem;
+        justify-content: center;
+        margin-top: 4rem;
 
         .hero_images {
             display: flex;
             justify-content: center;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: 1;
             gap: 1rem;
             margin-bottom: 2rem;
+
+
+            .image_wrapper {
+                position: relative;
+                width: 350px;
+                height: 400px;
+                overflow: hidden;
+                opacity: 0.7;
+            }
         }
 
         .short_intro {
-            background-color: #fff;
-            padding: 1.5rem;
-            border: 1px solid #ddd;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            background: rgba(255, 255, 228, 0.7);
+            padding: 1rem 2rem;
             border-radius: 8px;
+            max-width: 70%;
+            margin-top: 10rem;
 
             h2 {
-                margin-bottom: 1rem;
-                color: #333;
+                font-family: $title-font;
+                font-size: 2.3rem;
+                margin-bottom: 0.8rem;
+                color: $primary-color;
             }
 
             p {
-                color: #666;
+                font-family: $body-font;
+                font-size: 1.4rem;
+                font-weight: 700;
+                color: lighten($primary-color, 10%);
             }
         }
     }

@@ -12,9 +12,30 @@ const Home = () => {
             <main className={styles.home}>
                 <section className={styles.hero}>
                     <div className={styles.hero_images}>
-                        <Image src="/images/home/hero2.jpg" alt="Left Image" width={300} height={400} />
-                        <Image src="/images/home/hero1.jpg" alt="Center Image" width={400} height={500} />
-                        <Image src="/images/home/hero3.jpg" alt="Right Image" width={300} height={400} />
+                        <div className={styles.image_wrapper}>
+                            <Image
+                                src="/images/home/hero2.jpg"
+                                alt="Left Image"
+                                layout="fill"
+                                objectFit="cover"
+                            />
+                        </div>
+                        <div className={styles.image_wrapper}>
+                            <Image
+                                src="/images/home/hero1.jpg"
+                                alt="Center Image"
+                                layout="fill"
+                                objectFit="cover"
+                            />
+                        </div>
+                        <div className={styles.image_wrapper}>
+                            <Image
+                                src="/images/home/hero3.jpg"
+                                alt="Right Image"
+                                layout="fill"
+                                objectFit="cover"
+                            />
+                        </div>
                     </div>
                     <div className={styles.short_intro}>
                         <h2>Capturing Life's Most Precious Moments</h2>
@@ -24,7 +45,7 @@ const Home = () => {
                         </p>
                     </div>
                 </section>
-            </main>
+            </main >
             <Footer />
         </>
     );

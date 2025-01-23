@@ -1,7 +1,7 @@
 // _app.txs The entry point of te app
 import '@/styles/globals.scss';
 import type { AppProps } from 'next/app';
-import { Bree_Serif, Oleo_Script } from 'next/font/google';
+import { Bree_Serif, Oleo_Script, Outfit } from 'next/font/google';
 
 // Importing Google Fonts
 const breeSerif = Bree_Serif({
@@ -14,6 +14,12 @@ const oleoScript = Oleo_Script({
     weight: '400',
     subsets: ['latin'],
     variable: '--font-oleo-script',
+});
+
+const outfit = Outfit({
+    weight: ['300', '400', '500', '700'],
+    subsets: ['latin'],
+    variable: '--font-outfit',
 });
 
 function MyApp({ Component, pageProps }: AppProps) {

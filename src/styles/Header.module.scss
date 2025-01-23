@@ -1,15 +1,10 @@
-$primary-color: #444444;
-$secondary-color: #F4A582;
-$hover-color: #F4A582;
-$title-font-family: var(--font-bree-serif), serif;
-$name-font-family: var(--font-oleo-script), cursive;
-$text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 
+@import '@/styles/_variables';
 
 .header {
     display: flex;
     justify-content: space-between;
-    font-family: $title-font-family;
+    font-family: $title-font;
     color: $primary-color;
     align-items: center;
     padding: 0.8rem 2rem;
@@ -39,7 +34,7 @@ $text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             }
 
             .name {
-                font-family: $name-font-family;
+                font-family: $secondary-font;
                 font-size: 1.4rem;
                 font-weight: 400;
                 margin-left: 0.5rem;
