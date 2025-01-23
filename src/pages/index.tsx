@@ -9,44 +9,45 @@ const Home = () => {
     return (
         <>
             <Header />
-            <main className={styles.home}>
-                <section className={styles.hero}>
-                    <div className={styles.hero_images}>
-                        <div className={styles.image_wrapper}>
-                            <Image
-                                src="/images/home/hero2.jpg"
-                                alt="Left Image"
-                                layout="fill"
-                                objectFit="cover"
-                            />
+            <div className="page-container">
+                <main className={styles.home}>
+                    <section className={styles.hero}>
+                        <div className={styles.hero_images}>
+                            <div className={styles.image_wrapper}>
+                                <Image
+                                    src="/images/home/hero2.jpg"
+                                    alt="Left Image"
+                                    layout="fill"
+                                    objectFit="cover"
+                                />
+                            </div>
+                            <div className={styles.image_wrapper}>
+                                <Image
+                                    src="/images/home/hero1.jpg"
+                                    alt="Center Image"
+                                    layout="fill"
+                                    objectFit="cover"
+                                />
+                            </div>
+                            <div className={styles.image_wrapper}>
+                                <Image
+                                    src="/images/home/hero3.jpg"
+                                    alt="Right Image"
+                                    layout="fill"
+                                    objectFit="cover"
+                                />
+                            </div>
                         </div>
-                        <div className={styles.image_wrapper}>
-                            <Image
-                                src="/images/home/hero1.jpg"
-                                alt="Center Image"
-                                layout="fill"
-                                objectFit="cover"
-                            />
+                        <div className={styles.short_intro}>
+                            <h2>Die kostbarsten Momente des Lebens einfangen</h2>
+                            <p>
+                                Willkommen bei Gefrorene Augenblicke, wo jedes Ereignis eine Geschichte und jedes Foto eine wertvolle Erinnerung ist.
+                            </p>
                         </div>
-                        <div className={styles.image_wrapper}>
-                            <Image
-                                src="/images/home/hero3.jpg"
-                                alt="Right Image"
-                                layout="fill"
-                                objectFit="cover"
-                            />
-                        </div>
-                    </div>
-                    <div className={styles.short_intro}>
-                        <h2>Capturing Life's Most Precious Moments</h2>
-                        <p>
-                            Welcome to Frozen Moments, where every event is a story and every photograph is
-                            a cherished memory.
-                        </p>
-                    </div>
-                </section>
-            </main >
-            <Footer />
+                    </section>
+                </main >
+                <Footer />
+            </div >
         </>
     );
 };

@@ -15,6 +15,24 @@ body {
     line-height: 1.6;
 }
 
+/* Titles */
+h1 {
+    font-family: $title-font;
+    color: $secondary-color;
+}
+
+/* Page Continer (main + footer) */
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    /* Pushes the footer to the bottom */
+}
+
 /* Links */
 a {
     color: $primary-color;

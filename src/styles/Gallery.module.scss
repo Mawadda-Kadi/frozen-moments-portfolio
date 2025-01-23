@@ -1,0 +1,94 @@
+.gallery {
+    padding: 2rem;
+    background-color: #fdf5e6;
+
+    .filter_menu {
+        text-align: center;
+        margin-bottom: 2rem;
+
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #f5deb3;
+            }
+
+            &:focus {
+                outline: none;
+                background-color: #d4a373;
+            }
+        }
+    }
+
+    .photo_grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @media (max-width: 480px) {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .photo_card {
+        text-align: center;
+
+        .photo_image {
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+
+        .photo_name {
+            margin-top: 0.5rem;
+            font-size: 1rem;
+            color: #333;
+        }
+    }
+
+    .pagination {
+        text-align: center;
+        margin-top: 2rem;
+
+        button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            margin: 0.5rem;
+            border-radius: 4px;
+            cursor: pointer;
+
+            &:disabled {
+                background-color: #ccc;
+                cursor: not-allowed;
+            }
+
+            &:hover:not(:disabled) {
+                background-color: #f5deb3;
+            }
+        }
+
+        span {
+            display: inline-block;
+            margin: 0 1rem;
+            font-size: 1rem;
+            color: #333;
+        }
+    }
+}

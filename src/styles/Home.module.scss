@@ -2,6 +2,7 @@
 @import '@/styles/_variables';
 
 .home {
+
     .hero {
         position: relative;
         display: flex;
@@ -20,7 +21,6 @@
             z-index: 1;
             gap: 1rem;
             margin-bottom: 2rem;
-
 
             .image_wrapper {
                 position: relative;
