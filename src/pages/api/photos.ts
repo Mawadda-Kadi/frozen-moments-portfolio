@@ -55,15 +55,23 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 if (!resources || !Array.isArray(resources)) {
                     return res.status(404).json({ message: 'No photos found in the specified folder.' });
                 }
-                
+
                 console.log('Resources:', resources);
 
                 const photos = resources.map((photo) => ({
-                    id: photo.asset_id,
+                    id: photo.asset_id, // Unique identifier for the asset
                     src: photo.secure_url, // URL for the image
                     name: photo.public_id.split('/').pop(), // Extract the file name
+                    cameraPosition: photo.metadata?.cameraPosition || 'Unknown',
+                    lensUsed: photo.metadata?.lensUsed || 'Unknown',
+                    location: photo.metadata?.location || 'Unknown',
+                    date: photo.metadata?.date || 'Unknown',
+                    description: photo.metadata?.description || 'No description provided',
                     width: photo.width,
                     height: photo.height,
+                    //format: photo.format, // File format (e.g., jpg, png)
+                    //bytes: photo.bytes,
+                    // tags: photo.tags || [], // Tags associated with the image
                 })) || [];
 
                 res.status(200).json({ photos });
@@ -88,7 +96,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 cameraPosition,
                 lensUsed,
                 location,
-                time,
+                date,
                 description,
             } = req.body;
 
@@ -97,8 +105,15 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 return res.status(400).json({ message: 'Missing required fields (src, name, or category).' });
             }
 
+            // Validate optional metadata
+            if (!cameraPosition || !lensUsed || !location || !date || !description) {
+                return res.status(400).json({
+                    message: 'Missing one or more metadata fields (cameraPosition, lensUsed, location, date, description).',
+                });
+            }
+
             // Generate a unique share URL
-            const shareUrl = `https://yourwebsite.com/gallery/${name.replace(/\s+/g, '-').toLowerCase()}`;
+            const shareUrl = `https://website.com/gallery/${name.replace(/\s+/g, '-').toLowerCase()}`;
 
             // Construct the photo document
             const newPhoto = {
@@ -109,7 +124,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
                 cameraPosition,
                 lensUsed,
                 location,
-                time: new Date(time).toISOString(), // Convert to ISO 8601 format
+                date: new Date(date).toISOString(), // Convert to ISO 8601 format
                 description,
             };
 

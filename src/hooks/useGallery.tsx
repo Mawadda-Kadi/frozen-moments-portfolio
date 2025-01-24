@@ -5,6 +5,11 @@ interface Photo {
     src: string;
     name: string;
     category: string;
+    cameraPosition: string;
+    lensUsed: string;
+    location: string;
+    date: string;
+    description: string;
 }
 
 export const useGallery = (photosPerPage: number) => {

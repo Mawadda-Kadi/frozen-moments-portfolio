@@ -1,20 +1,48 @@
+import { useState, useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import Lightbox from '@/components/Lightbox';
 import styles from '@/styles/Gallery.module.scss';
-import { useGallery } from '@/hooks/useGallery';
 
 const photosPerPage = 18;
 
 const Gallery = () => {
-    const {
-        photos,
-        totalPages,
-        currentPage,
-        setCurrentPage,
-        selectedCategory,
-        setSelectedCategory,
-    } = useGallery(photosPerPage);
+    const [photos, setPhotos] = useState([]);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [selectedCategory, setSelectedCategory] = useState('all');
+    const [filteredPhotos, setFilteredPhotos] = useState([]);
+    const [lightboxOpen, setLightboxOpen] = useState(false);
+    const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
+
+    // Fetch photos from the local directory
+    useEffect(() => {
+        const fetchPhotos = async () => {
+            const allPhotos = [
+                { id: 1, src: '/images/gallery/birthday1.jpg', name: 'Photo 1', category: 'birthdays' },
+                { id: 2, src: '/images/gallery/business1.jpg', name: 'Photo 2', category: 'business_events' },
+                { id: 3, src: '/images/gallery/baby_shower1.jpg', name: 'Photo 3', category: 'baby_showers' },
+                // Add all your photos with metadata here
+            ];
+            setPhotos(allPhotos);
+        };
+
+        fetchPhotos();
+    }, []);
+
+    // Filter photos based on the selected category
+    useEffect(() => {
+        const filtered = selectedCategory === 'all'
+            ? photos
+            : photos.filter((photo) => photo.category === selectedCategory);
+        setFilteredPhotos(filtered);
+    }, [selectedCategory, photos]);
+
+    // Paginate the filtered photos
+    const startIndex = (currentPage - 1) * photosPerPage;
+    const paginatedPhotos = filteredPhotos.slice(startIndex, startIndex + photosPerPage);
+
+    const totalPages = Math.ceil(filteredPhotos.length / photosPerPage);
 
     return (
         <>
@@ -22,23 +50,30 @@ const Gallery = () => {
             <main className={styles.gallery}>
                 {/* Filter Menu */}
                 <div className={styles.filter_menu}>
-                    <button onClick={() => setSelectedCategory('all')}>All</button>
-                    <button onClick={() => setSelectedCategory('weddings')}>Weddings</button>
-                    <button onClick={() => setSelectedCategory('birthdays')}>Birthdays</button>
-                    <button onClick={() => setSelectedCategory('baby_showers')}>Baby Showers</button>
-                    <button onClick={() => setSelectedCategory('graduations')}>Graduations</button>
+                    <button onClick={() => setSelectedCategory('all')}>Alle</button>
+                    <button onClick={() => setSelectedCategory('weddings')}>Hochzeiten</button>
+                    <button onClick={() => setSelectedCategory('birthdays')}>Geburtstage</button>
+                    <button onClick={() => setSelectedCategory('baby_showers')}>Babypartys</button>
+                    <button onClick={() => setSelectedCategory('graduations')}>Abschlussfeiern</button>
                     <button onClick={() => setSelectedCategory('personal_photoshoots')}>
-                        Personal Photoshoots
+                        Persönliche Fotoshootings
                     </button>
                     <button onClick={() => setSelectedCategory('business_events')}>
-                        Business Events
+                        Geschäftliche Veranstaltungen
                     </button>
                 </div>
 
                 {/* Photo Grid */}
                 <div className={styles.photo_grid}>
-                    {photos.map((photo) => (
-                        <div key={photo.id} className={styles.photo_card}>
+                    {paginatedPhotos.map((photo, index) => (
+                        <div
+                            key={photo.id}
+                            className={styles.photo_card}
+                            onClick={() => {
+                                setCurrentPhotoIndex(startIndex + index);
+                                setLightboxOpen(true);
+                            }}
+                        >
                             <Image src={photo.src} alt={photo.name} width={300} height={300} />
                             <p>{photo.name}</p>
                         </div>
@@ -63,6 +98,32 @@ const Gallery = () => {
                         Next
                     </button>
                 </div>
+
+                {/* Lightbox */}
+                {lightboxOpen && (
+                    <Lightbox
+                        mainSrc={filteredPhotos[currentPhotoIndex].src}
+                        nextSrc={
+                            filteredPhotos[(currentPhotoIndex + 1) % filteredPhotos.length].src
+                        }
+                        prevSrc={
+                            filteredPhotos[
+                                (currentPhotoIndex + filteredPhotos.length - 1) %
+                                filteredPhotos.length
+                            ].src
+                        }
+                        onCloseRequest={() => setLightboxOpen(false)}
+                        onMovePrevRequest={() =>
+                            setCurrentPhotoIndex(
+                                (currentPhotoIndex + filteredPhotos.length - 1) %
+                                filteredPhotos.length
+                            )
+                        }
+                        onMoveNextRequest={() =>
+                            setCurrentPhotoIndex((currentPhotoIndex + 1) % filteredPhotos.length)
+                        }
+                    />
+                )}
             </main>
             <Footer />
         </>
