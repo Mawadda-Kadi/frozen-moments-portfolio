@@ -35,7 +35,6 @@ const Gallery = () => {
             ];
             setPhotos(allPhotos);
         };
-
         fetchPhotos();
     }, []);
 
@@ -84,23 +83,21 @@ const Gallery = () => {
                             }}
                         >
                             <Image src={photo.src} alt={photo.name} width={300} height={300} className={styles.photo_image} />
-                            <p className={styles.photo_name}>{photo.name}</p>
-                            <div className={styles.photo_actions}>
+                            <div className={styles.icon_overlay}>
                                 <button
                                     className={styles.icon_button}
                                     onClick={(e) => {
                                         e.stopPropagation();
-                                        // Redirect to the Photo Details page
                                         router.push(`/photo/${photo.id}`);
                                     }}
                                 >
-                                    <span className={styles.icon}>👁️</span> Mehr ansehen
+                                    <span className={styles.icon}>👁️</span>
+                                    <span className={styles.tooltip}>Mehr ansehen</span>
                                 </button>
                                 <button
                                     className={styles.icon_button}
                                     onClick={(e) => {
                                         e.stopPropagation();
-                                        // Share photo logic
                                         navigator.share
                                             ? navigator.share({
                                                 title: photo.name,
@@ -110,9 +107,11 @@ const Gallery = () => {
                                             : alert('Sharing not supported on this browser');
                                     }}
                                 >
-                                    <span className={styles.icon}>🔗</span> Foto teilen
+                                    <span className={styles.icon}>🔗</span>
+                                    <span className={styles.tooltip}>Foto teilen</span>
                                 </button>
                             </div>
+                            <p className={styles.photo_name}>{photo.name}</p>
                         </div>
                     ))}
                 </div>
