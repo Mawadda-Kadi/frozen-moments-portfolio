@@ -12,6 +12,7 @@ interface Photo {
     category: string;
     camera: string;
     lens: string;
+    camera_position: string;
     location: string;
     date: string;
     description: string;
@@ -39,6 +40,7 @@ const PhotoDetails = () => {
                     category: 'Birthdays',
                     camera: 'Canon EOS R5',
                     lens: 'RF 50mm F1.2L',
+                    camera_position: 'Top/Down',
                     location: 'Berlin, Germany',
                     date: '2025-01-15',
                     description: 'A beautiful birthday celebration capturing smiles and joy.',
@@ -50,6 +52,7 @@ const PhotoDetails = () => {
                     category: 'Business Events',
                     camera: 'Nikon D850',
                     lens: '85mm F1.4',
+                    camera_position: 'Top/Down',
                     location: 'Hamburg, Germany',
                     date: '2025-01-10',
                     description: 'A professional event featuring inspiring speeches and networking.',
@@ -76,13 +79,18 @@ const PhotoDetails = () => {
                 </div>
                 <div className={styles.photo_info_card}>
                     <h1>{photo.name}</h1>
-                    <p><strong>Category:</strong> {photo.category}</p>
-                    <p><strong>Camera:</strong> {photo.camera}</p>
-                    <p><strong>Lens:</strong> {photo.lens}</p>
-                    <p><strong>Location:</strong> {photo.location}</p>
-                    <p><strong>Date:</strong> {photo.date}</p>
-                    <p><strong>Description:</strong> {photo.description}</p>
-                    <button onClick={() => router.push('/gallery')} className={styles.back_button}>Back to Gallery</button>
+                    <div className={styles.info_grid}>
+                        <p><strong>Category:</strong> {photo.category}</p>
+                        <p><strong>Camera:</strong> {photo.camera}</p>
+                        <p><strong>Lens:</strong> {photo.lens}</p>
+                        <p><strong>Camera Position:</strong> {photo.camera_position}</p>
+                        <p><strong>Location:</strong> {photo.location}</p>
+                        <p><strong>Date:</strong> {photo.date}</p>
+                    </div>
+                    <p className={styles.description}><strong>Description:</strong> {photo.description}</p>
+                    <button onClick={() => router.push('/gallery')} className={styles.back_button}>
+                        Back to Gallery
+                    </button>
                 </div>
             </main>
             <Footer />
