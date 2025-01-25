@@ -102,24 +102,15 @@ const Gallery = () => {
                 {/* Lightbox */}
                 {lightboxOpen && (
                     <Lightbox
-                        mainSrc={filteredPhotos[currentPhotoIndex].src}
-                        nextSrc={
-                            filteredPhotos[(currentPhotoIndex + 1) % filteredPhotos.length].src
-                        }
-                        prevSrc={
-                            filteredPhotos[
-                                (currentPhotoIndex + filteredPhotos.length - 1) %
-                                filteredPhotos.length
-                            ].src
-                        }
-                        onCloseRequest={() => setLightboxOpen(false)}
-                        onMovePrevRequest={() =>
+                        src={filteredPhotos[currentPhotoIndex].src}
+                        onClose={() => setLightboxOpen(false)}
+                        onPrev={() =>
                             setCurrentPhotoIndex(
                                 (currentPhotoIndex + filteredPhotos.length - 1) %
                                 filteredPhotos.length
                             )
                         }
-                        onMoveNextRequest={() =>
+                        onNext={() =>
                             setCurrentPhotoIndex((currentPhotoIndex + 1) % filteredPhotos.length)
                         }
                     />
