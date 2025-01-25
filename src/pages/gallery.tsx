@@ -2,16 +2,25 @@ import { useState, useEffect } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import Lightbox from '@/components/Lightbox';
 import styles from '@/styles/Gallery.module.scss';
+
+interface Photo {
+    id: number;
+    src: string;
+    name: string;
+    category: string;
+}
 
 const photosPerPage = 18;
 
 const Gallery = () => {
-    const [photos, setPhotos] = useState([]);
+    const router = useRouter();
+    const [photos, setPhotos] = useState<Photo[]>([]);
     const [currentPage, setCurrentPage] = useState(1);
     const [selectedCategory, setSelectedCategory] = useState('all');
-    const [filteredPhotos, setFilteredPhotos] = useState([]);
+    const [filteredPhotos, setFilteredPhotos] = useState<Photo[]>([]);
     const [lightboxOpen, setLightboxOpen] = useState(false);
     const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
 
@@ -74,8 +83,36 @@ const Gallery = () => {
                                 setLightboxOpen(true);
                             }}
                         >
-                            <Image src={photo.src} alt={photo.name} width={300} height={300} />
-                            <p>{photo.name}</p>
+                            <Image src={photo.src} alt={photo.name} width={300} height={300} className={styles.photo_image} />
+                            <p className={styles.photo_name}>{photo.name}</p>
+                            <div className={styles.photo_actions}>
+                                <button
+                                    className={styles.icon_button}
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        // Redirect to the Photo Details page
+                                        router.push(`/photo/${photo.id}`);
+                                    }}
+                                >
+                                    <span className={styles.icon}>👁️</span> Mehr ansehen
+                                </button>
+                                <button
+                                    className={styles.icon_button}
+                                    onClick={(e) => {
+                                        e.stopPropagation();
+                                        // Share photo logic
+                                        navigator.share
+                                            ? navigator.share({
+                                                title: photo.name,
+                                                text: `Check out this photo: ${photo.name}`,
+                                                url: window.location.href,
+                                            })
+                                            : alert('Sharing not supported on this browser');
+                                    }}
+                                >
+                                    <span className={styles.icon}>🔗</span> Foto teilen
+                                </button>
+                            </div>
                         </div>
                     ))}
                 </div>

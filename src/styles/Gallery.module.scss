@@ -62,9 +62,38 @@
         .photo_name {
             margin-top: 0.5rem;
             font-size: 1rem;
-            color: #333;
+            color: $primary-color;
+        }
+
+        .photo_actions {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 0.5rem;
+
+            .icon_button {
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+                background-color: $secondary-background-color;
+                color: $primary-color;
+                border: none;
+                padding: 0.5rem 1rem;
+                border-radius: 4px;
+                cursor: pointer;
+                font-size: 0.9rem;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: $hover-color;
+                }
+
+                .icon {
+                    font-size: 1.2rem;
+                }
+            }
         }
     }
+
 
     .pagination {
         text-align: center;
