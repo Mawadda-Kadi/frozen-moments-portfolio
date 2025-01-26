@@ -1,8 +1,6 @@
-
 @import '@/styles/_variables';
 
 .home {
-
     .hero {
         position: relative;
         display: flex;
@@ -14,38 +12,75 @@
 
         .hero_images {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             width: 100%;
-            height: 100%;
-            position: absolute;
+            height: auto;
+            position: relative;
             z-index: 1;
-            gap: 1rem;
+            gap: 2rem;
             margin-bottom: 2rem;
 
             .image_wrapper {
                 position: relative;
-                width: 350px;
+                width: 100%;
+                max-width: 350px;
                 height: 400px;
                 overflow: hidden;
-                opacity: 0.7;
+                border-radius: 12px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+                &:hover {
+                    transform: scale(1.05);
+                    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+                }
+
+                .image {
+                    opacity: 0.9;
+                    transition: opacity 0.3s ease;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+
+            }
+
+            .center_image {
+                @media (max-width: 480px) {
+                    opacity: 0;
+                    box-shadow: none;
+                }
             }
         }
 
         .short_intro {
-            position: relative;
+            position: absolute;
             z-index: 2;
             text-align: center;
-            background: rgba(255, 255, 228, 0.7);
-            padding: 1rem 2rem;
-            border-radius: 8px;
+            background: rgba(255, 255, 228, 0.8);
+            padding: 1.5rem;
+            border-radius: 12px;
             max-width: 70%;
-            margin-top: 10rem;
+            top: 55%;
+            transform: translateY(-50%);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+            @media (max-width: 480px) {
+                top: 48.5%;
+                padding: 1rem;
+            }
 
             h2 {
                 font-family: $title-font;
                 font-size: 2.3rem;
                 margin-bottom: 0.8rem;
                 color: $primary-color;
+
+                @media (max-width: 768px) {
+                    font-size: 2rem;
+                }
             }
 
             p {
@@ -53,6 +88,41 @@
                 font-size: 1.4rem;
                 font-weight: 700;
                 color: lighten($primary-color, 10%);
+
+                @media (max-width: 768px) {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px) {
+        .hero {
+            margin-top: 2rem;
+
+            .hero_images {
+                gap: 1rem;
+
+                .image_wrapper {
+                    max-width: 300px;
+                    height: 350px;
+                }
+            }
+
+            .short_intro {
+                max-width: 90%;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .hero_images .image_wrapper {
+            max-width: 100%;
+            height: 250px;
+
+            .center_image {
+                opacity: 0;
+                box-shadow: none;
             }
         }
     }

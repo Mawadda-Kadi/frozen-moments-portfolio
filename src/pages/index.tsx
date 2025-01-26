@@ -19,9 +19,10 @@ const Home = () => {
                                     alt="Left Image"
                                     layout="fill"
                                     objectFit="cover"
+                                    className={styles.image}
                                 />
                             </div>
-                            <div className={styles.image_wrapper}>
+                            <div className={`${styles.image_wrapper} ${styles.center_image}`}>
                                 <Image
                                     src="/images/home/hero1.jpg"
                                     alt="Center Image"
@@ -35,6 +36,7 @@ const Home = () => {
                                     alt="Right Image"
                                     layout="fill"
                                     objectFit="cover"
+                                    className={styles.image}
                                 />
                             </div>
                         </div>
@@ -51,6 +53,5 @@ const Home = () => {
         </>
     );
 };
-
 
 export default Home;
