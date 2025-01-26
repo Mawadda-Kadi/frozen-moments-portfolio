@@ -4,12 +4,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
     font-family: $title-font;
     color: $primary-color;
     padding: 0.8rem 2rem;
-    position: relative;
     background-color: $secondary-background-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+
+    @media screen and (max-width: 768px) {
+        padding: 0.8rem 1rem;
+    }
 
     .header_left {
         display: flex;
@@ -21,7 +25,7 @@
             margin-right: 1rem;
 
             @media screen and (max-width: 768px) {
-                width: 120px;
+                width: 70px;
                 margin-right: 0.4rem;
             }
         }
@@ -36,6 +40,7 @@
 
                 @media screen and (max-width: 768px) {
                     font-size: 1.4rem;
+                    flex-wrap: nowrap;
                 }
             }
 
@@ -55,60 +60,23 @@
         }
     }
 
+    .menu_toggle {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: $primary-color;
+        cursor: pointer;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
     .navigation {
         display: flex;
         gap: 1.5rem;
 
-        a {
-            text-decoration: none;
-            color: $primary-color;
-            font-weight: bold;
-
-            &:hover {
-                color: $hover-color;
-            }
-        }
-
-        &.navigation_open {
-            display: block;
-        }
-    }
-
-    .menu_toggle {
-        display: none;
-
-        @media screen and (max-width: 768px) {
-            display: block;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            color: $primary-color;
-            cursor: pointer;
-
-            &:focus {
-                outline: none;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .navigation {
-        display: none; // Hidden by default
-        position: absolute;
-        top: 100%; // Place it below the header
-        left: 0;
-        width: 100%;
-        background-color: $secondary-background-color;
-        padding: 1rem;
-        z-index: 1000; // Ensure visibility above other elements
-
-        flex-direction: row; // Items in a row (horizontal)
-        gap: 1.5rem; // Space between items
-
-        &.navigation_open {
-            display: flex; // Show the menu when open
-        }
 
         a {
             text-decoration: none;
@@ -119,8 +87,53 @@
                 color: $hover-color;
             }
 
-            &:last-child {
-                border-bottom: none;
+            &.active {
+                color: $hover-color;
+                border-bottom: 2px solid $hover-color;
+            }
+        }
+
+        &.navigation_open {
+            display: block;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .menu_toggle {
+            display: block;
+        }
+
+        .navigation {
+            display: none;
+            position: absolute;
+            top: 100%; // Place it below the header
+            left: 0;
+            width: 100%;
+            background-color: $secondary-background-color;
+            padding: 1rem;
+            z-index: 1000;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+            flex-direction: row;
+            gap: 1.5rem;
+            margin-bottom: 1rem;
+
+            &.navigation_open {
+                display: flex;
+                border: 2px solid rgba(0, 0, 0, 0.2);
+            }
+
+            a {
+                text-decoration: none;
+                color: $primary-color;
+                font-weight: bold;
+
+                &:hover {
+                    color: $hover-color;
+                }
+
+                &:last-child {
+                    border-bottom: none;
+                }
             }
         }
     }

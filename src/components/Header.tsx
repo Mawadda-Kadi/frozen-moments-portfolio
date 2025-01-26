@@ -1,11 +1,13 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 import { useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 import styles from '@/styles/Header.module.scss';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const router = useRouter();
 
     const toggleMenu = () => {
         setIsMenuOpen((prev) => !prev);
@@ -18,8 +20,8 @@ const Header = () => {
                     className={styles.logo}
                     src="/images/logo.png"
                     alt="Logo"
-                    width={50}
-                    height={50}
+                    width={2000}
+                    height={1000}
                 />
                 <h1 className={styles.title}>
                     <span className={styles.frozen_memory}>Frozen Moments</span>
@@ -32,12 +34,28 @@ const Header = () => {
             <nav
                 className={`${styles.navigation} ${isMenuOpen ? styles.navigation_open : ''
                     }`}
-                style={{ display: isMenuOpen ? 'flex' : 'none' }}
             >
-                <Link href="/">Startseite</Link>
-                <Link href="/gallery">Galerie</Link>
-                <Link href="/about">Über mich</Link>
-                <Link href="/contact">Kontakt</Link>
+                <Link href="/" className={router.pathname === '/' ? styles.active : ''}>
+                    Startseite
+                </Link>
+                <Link
+                    href="/gallery"
+                    className={router.pathname === '/gallery' ? styles.active : ''}
+                >
+                    Galerie
+                </Link>
+                <Link
+                    href="/about"
+                    className={router.pathname === '/about' ? styles.active : ''}
+                >
+                    Über mich
+                </Link>
+                <Link
+                    href="/contact"
+                    className={router.pathname === '/contact' ? styles.active : ''}
+                >
+                    Kontakt
+                </Link>
             </nav>
         </header>
     );
