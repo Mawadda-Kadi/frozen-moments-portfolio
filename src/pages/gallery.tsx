@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import Lightbox from '@/components/Lightbox';
 import styles from '@/styles/Gallery.module.scss';
+import { FiEye, FiShare2 } from 'react-icons/fi'; // Import icons from react-icons
 
 interface Photo {
     id: number;
@@ -24,21 +25,18 @@ const Gallery = () => {
     const [lightboxOpen, setLightboxOpen] = useState(false);
     const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
 
-    // Fetch photos from the local directory
     useEffect(() => {
         const fetchPhotos = async () => {
             const allPhotos = [
                 { id: 1, src: '/images/gallery/birthday1.jpg', name: 'Photo 1', category: 'birthdays' },
                 { id: 2, src: '/images/gallery/business1.jpg', name: 'Photo 2', category: 'business_events' },
                 { id: 3, src: '/images/gallery/baby_shower1.jpg', name: 'Photo 3', category: 'baby_showers' },
-                // Add all your photos with metadata here
             ];
             setPhotos(allPhotos);
         };
         fetchPhotos();
     }, []);
 
-    // Filter photos based on the selected category
     useEffect(() => {
         const filtered = selectedCategory === 'all'
             ? photos
@@ -46,7 +44,6 @@ const Gallery = () => {
         setFilteredPhotos(filtered);
     }, [selectedCategory, photos]);
 
-    // Paginate the filtered photos
     const startIndex = (currentPage - 1) * photosPerPage;
     const paginatedPhotos = filteredPhotos.slice(startIndex, startIndex + photosPerPage);
 
@@ -56,7 +53,6 @@ const Gallery = () => {
         <>
             <Header />
             <main className={styles.gallery}>
-                {/* Filter Menu */}
                 <div className={styles.filter_menu}>
                     <button onClick={() => setSelectedCategory('all')}>Alle</button>
                     <button onClick={() => setSelectedCategory('weddings')}>Hochzeiten</button>
@@ -71,7 +67,6 @@ const Gallery = () => {
                     </button>
                 </div>
 
-                {/* Photo Grid */}
                 <div className={styles.photo_grid}>
                     {paginatedPhotos.map((photo, index) => (
                         <div
@@ -82,7 +77,13 @@ const Gallery = () => {
                                 setLightboxOpen(true);
                             }}
                         >
-                            <Image src={photo.src} alt={photo.name} width={300} height={300} className={styles.photo_image} />
+                            <Image
+                                src={photo.src}
+                                alt={photo.name}
+                                width={300}
+                                height={300}
+                                className={styles.photo_image}
+                            />
                             <div className={styles.icon_overlay}>
                                 <button
                                     className={styles.icon_button}
@@ -91,7 +92,7 @@ const Gallery = () => {
                                         router.push(`/photo/${photo.id}`);
                                     }}
                                 >
-                                    <span className={styles.icon}>👁️</span>
+                                    <FiEye/>
                                     <span className={styles.tooltip}>Mehr ansehen</span>
                                 </button>
                                 <button
@@ -107,7 +108,7 @@ const Gallery = () => {
                                             : alert('Sharing not supported on this browser');
                                     }}
                                 >
-                                    <span className={styles.icon}>🔗</span>
+                                    <FiShare2/>
                                     <span className={styles.tooltip}>Foto teilen</span>
                                 </button>
                             </div>
@@ -116,7 +117,6 @@ const Gallery = () => {
                     ))}
                 </div>
 
-                {/* Pagination */}
                 <div className={styles.pagination}>
                     <button
                         onClick={() => setCurrentPage((prev) => Math.max(prev - 1, 1))}
@@ -135,15 +135,13 @@ const Gallery = () => {
                     </button>
                 </div>
 
-                {/* Lightbox */}
                 {lightboxOpen && (
                     <Lightbox
                         src={filteredPhotos[currentPhotoIndex].src}
                         onClose={() => setLightboxOpen(false)}
                         onPrev={() =>
                             setCurrentPhotoIndex(
-                                (currentPhotoIndex + filteredPhotos.length - 1) %
-                                filteredPhotos.length
+                                (currentPhotoIndex + filteredPhotos.length - 1) % filteredPhotos.length
                             )
                         }
                         onNext={() =>
