@@ -3,14 +3,13 @@
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     font-family: $title-font;
     color: $primary-color;
-    align-items: center;
     padding: 0.8rem 2rem;
+    position: relative;
     background-color: $secondary-background-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
-    margin-bottom: 1px;
-
 
     .header_left {
         display: flex;
@@ -20,6 +19,11 @@
             width: 100px;
             height: auto;
             margin-right: 1rem;
+
+            @media screen and (max-width: 768px) {
+                width: 120px;
+                margin-right: 0.4rem;
+            }
         }
 
         .title {
@@ -27,9 +31,12 @@
             flex-wrap: wrap;
             margin-left: 1rem;
 
-
             .frozen_memory {
                 font-size: 1.8rem;
+
+                @media screen and (max-width: 768px) {
+                    font-size: 1.4rem;
+                }
             }
 
             .name {
@@ -41,6 +48,9 @@
                 text-shadow: $text-shadow;
                 -webkit-text-stroke: 0.3px $secondary-color;
 
+                @media screen and (max-width: 768px) {
+                    font-size: 1.2rem;
+                }
             }
         }
     }
@@ -58,22 +68,60 @@
                 color: $hover-color;
             }
         }
+
+        &.navigation_open {
+            display: block;
+        }
     }
 
-    .language_toggle {
-        padding: 0.5rem 1rem;
-        border: none;
-        background-color: $primary-color;
-        color: #fff;
-        cursor: pointer;
+    .menu_toggle {
+        display: none;
 
-        &:hover {
-            background-color: $hover-color;
+        @media screen and (max-width: 768px) {
+            display: block;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: $primary-color;
+            cursor: pointer;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        display: none; // Hidden by default
+        position: absolute;
+        top: 100%; // Place it below the header
+        left: 0;
+        width: 100%;
+        background-color: $secondary-background-color;
+        padding: 1rem;
+        z-index: 1000; // Ensure visibility above other elements
+
+        flex-direction: row; // Items in a row (horizontal)
+        gap: 1.5rem; // Space between items
+
+        &.navigation_open {
+            display: flex; // Show the menu when open
         }
 
-        &:focus {
-            outline: none;
-            color: $secondary-color
+        a {
+            text-decoration: none;
+            color: $primary-color;
+            font-weight: bold;
+
+            &:hover {
+                color: $hover-color;
+            }
+
+            &:last-child {
+                border-bottom: none;
+            }
         }
     }
 }

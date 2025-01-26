@@ -41,7 +41,7 @@ const Home = () => {
                         <div className={styles.short_intro}>
                             <h2>Die kostbarsten Momente des Lebens einfangen</h2>
                             <p>
-                                Willkommen bei Gefrorene Augenblicke, wo jedes Ereignis eine Geschichte und jedes Foto eine wertvolle Erinnerung ist.
+                                Willkommen bei Frozen Moments, wo jedes Ereignis eine Geschichte und jedes Foto eine wertvolle Erinnerung ist.
                             </p>
                         </div>
                     </section>

@@ -1,9 +1,8 @@
-import Header from '@/components/Header';
+
 import '@/styles/globals.scss';
 
 const Impressum = () => (
     <>
-        <Header />
         <main style={{ padding: '2rem' }}>
             <h1>Impressum</h1>
             <div style={{ fontSize: '1.2rem' }}>

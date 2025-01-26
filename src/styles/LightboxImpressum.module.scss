@@ -1,0 +1,50 @@
+@import '@/styles/_variables';
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .content {
+        position: relative;
+        background-color: $background-color;
+        padding: 2rem;
+        border-radius: 8px;
+        max-width: 600px;
+        width: 90%;
+        max-height: 90%;
+        overflow-y: auto;
+        z-index: 1001;
+    }
+
+    .close_button {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: $primary-color;
+        padding: 10px;
+
+        &:hover {
+            color: $hover-color;
+        }
+    }
+}

@@ -1,40 +1,46 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { useState } from 'react';
-// useState used to declare a state variable.
-// Keeps track of the current language
+import { FiMenu, FiX } from 'react-icons/fi';
 import styles from '@/styles/Header.module.scss';
 
 const Header = () => {
-    const [language, setLanguage] = useState('DE');
-    // setLanguage: A function to update the state.
-    // useState initializes the state variable with the value 'DE'
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    const toggleLanguage = () => {
-        setLanguage((prev) => (prev === 'DE' ? 'EN' : 'DE')); // Update state
+    const toggleMenu = () => {
+        setIsMenuOpen((prev) => !prev);
     };
 
     return (
         <header className={styles.header}>
-        < div className = {styles.header_left}>
-                <Image className={styles.logo} src="/images/logo.png" alt="Logo" width={50} height={50} />
+            <div className={styles.header_left}>
+                <Image
+                    className={styles.logo}
+                    src="/images/logo.png"
+                    alt="Logo"
+                    width={50}
+                    height={50}
+                />
                 <h1 className={styles.title}>
                     <span className={styles.frozen_memory}>Frozen Moments</span>
                     <span className={styles.name}>von Emma Schmidt</span>
                 </h1>
             </div>
-            <nav className={styles.navigation}>
+            <button className={styles.menu_toggle} onClick={toggleMenu}>
+                {isMenuOpen ? <FiX /> : <FiMenu />}
+            </button>
+            <nav
+                className={`${styles.navigation} ${isMenuOpen ? styles.navigation_open : ''
+                    }`}
+                style={{ display: isMenuOpen ? 'flex' : 'none' }}
+            >
                 <Link href="/">Startseite</Link>
                 <Link href="/gallery">Galerie</Link>
                 <Link href="/about">Über mich</Link>
                 <Link href="/contact">Kontakt</Link>
             </nav>
-            <button className={styles.language_toggle} onClick={toggleLanguage}>
-                {language}
-            </button>
         </header>
     );
 };
-
 
 export default Header;
