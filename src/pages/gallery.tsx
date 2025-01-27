@@ -27,10 +27,27 @@ const Gallery = () => {
 
     useEffect(() => {
         const fetchPhotos = async () => {
-            const allPhotos = [ 
-                { id: 1, src: '/images/gallery/birthday1.jpg', name: 'Photo 1', category: 'birthdays' },
-                { id: 2, src: '/images/gallery/business1.jpg', name: 'Photo 2', category: 'business_events' },
-                { id: 3, src: '/images/gallery/baby_shower1.jpg', name: 'Photo 3', category: 'baby_showers' },
+            const allPhotos = [
+                { id: 1, src: '/images/gallery/wedding15.jpg', name: 'Erster Tanz', category: 'weddings' },
+                { id: 2, src: '/images/gallery/graduation3.jpg', name: 'Absolventenfreude', category: 'graduations' },
+                { id: 3, src: '/images/gallery/baby_shower6.jpg', name: 'Freude auf neues Leben', category: 'baby_showers' },
+                { id: 4, src: '/images/gallery/birthday16.jpg', name: 'Geburtstagswunsch', category: 'birthdays' },
+                { id: 5, src: '/images/gallery/business3.jpg', name: 'Teamgeist in Aktion', category: 'business_events' },
+                { id: 6, src: '/images/gallery/personal_shooting10.jpg', name: 'Frühlingsfreunde', category: 'personal_photoshoots' },
+                { id: 7, src: '/images/gallery/business9.jpg', name: 'Inspiration im Vortrag', category: 'business_events' },
+                { id: 8, src: '/images/gallery/wedding25.jpg', name: 'Winterliche Romantik', category: 'weddings' },
+                { id: 9, src: '/images/gallery/birthday4.jpg', name: 'Feierlaune pur', category: 'birthdays' },
+                { id: 10, src: '/images/gallery/graduation7.jpg', name: 'Abschluss und Stolz', category: 'graduations' },
+                { id: 11, src: '/images/gallery/wedding20.jpg', name: 'Feuerwerk der Liebe', category: 'weddings' },
+                { id: 12, src: '/images/gallery/personal_shooting6.jpg', name: 'Bergträume', category: 'personal_photoshoots' },
+                { id: 13, src: '/images/gallery/wedding6.jpg', name: 'Strandhochzeitstraum', category: 'weddings' },
+                { id: 14, src: '/images/gallery/birthday9.jpg', name: 'Geburtstagsspaß mit dem besten Freund', category: 'birthdays' },
+                { id: 15, src: '/images/gallery/personal_shooting8.jpg', name: 'Familienglück', category: 'personal_photoshoots' },
+                { id: 16, src: '/images/gallery/baby_shower11.jpg', name: 'Vorfreude auf das Wunder', category: 'baby_showers' },
+                { id: 17, src: '/images/gallery/wedding8.jpg', name: 'Liebe in den Wolken', category: 'weddings' },
+                { id: 18, src: '/images/gallery/birthday2.jpg', name: 'Feierliche Erinnerungen', category: 'birthdays' },
+                { id: 19, src: '/images/gallery/personal_shooting3.jpg', name: 'Unterwegs mit Stil', category: 'personal_photoshoots' },
+                { id: 20, src: '/images/gallery/personal_shooting9.jpg', name: 'Natur und Gelassenheit', category: 'personal_photoshoots' },
             ];
             setPhotos(allPhotos);
         };
