@@ -38,7 +38,7 @@ const aboutMe: React.FC = () => {
                 <section className={styles.hero}>
                     <div className={styles.heroContainer}>
                         <Image
-                            src="/images/about-me/emma3 (1).jpg"
+                            src="/images/about-me/hero-emma.jpg"
                             alt="Hero Image"
                             layout="responsive"
                             width={600}
