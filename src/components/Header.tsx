@@ -45,8 +45,8 @@ const Header = () => {
                     Galerie
                 </Link>
                 <Link
-                    href="/about"
-                    className={router.pathname === '/about' ? styles.active : ''}
+                    href="/aboutMe"
+                    className={router.pathname === '/aboutMe' ? styles.active : ''}
                 >
                     Über mich
                 </Link>

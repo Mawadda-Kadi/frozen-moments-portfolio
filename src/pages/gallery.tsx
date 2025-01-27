@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import Lightbox from '@/components/Lightbox';
 import styles from '@/styles/Gallery.module.scss';
-import { FiEye, FiShare2 } from 'react-icons/fi'; // Import icons from react-icons
+import { FiEye, FiShare2 } from 'react-icons/fi';
 
 interface Photo {
     id: number;

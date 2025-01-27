@@ -17,14 +17,14 @@
 
     .photo_info_card {
         flex: 1;
-        background-color: #fff;
+        background-color: lighten($secondary-background-color,1%);
         border-radius: 8px;
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
         padding: 2rem;
         display: flex;
         flex-direction: column;
         gap: 0.7rem;
-        //height: 474px;
+        height: auto;
         overflow-y: auto;
         /* scroll if content exceeds the height */
 
@@ -43,18 +43,27 @@
             align-items: start;
 
             p {
-                font-size: 1.1rem;
+                font-size: 1.3rem;
                 color: $primary-color;
                 word-wrap: break-word;
                 margin: 0;
+
+                @media (max-width: 768px) {
+                    font-size: 1.1rem;
+                }
             }
         }
 
         .description {
             margin-top: 0.5rem;
-            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
             color: $primary-color;
             line-height: 1.5;
+
+            @media (max-width: 768px) {
+                font-size: 1.1rem;
+            }
         }
 
         .back_button {
