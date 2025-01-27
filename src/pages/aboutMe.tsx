@@ -45,7 +45,7 @@ const aboutMe: React.FC = () => {
                             height={300}
                             className={styles.heroImage}
                         />
-                        <h1 className={styles.heroTitle}>Über mich</h1>
+                        <h1 className={styles.heroTitle}>Willkommen in meiner Welt der Fotografie</h1>
                     </div>
                 </section>
 
@@ -78,30 +78,36 @@ const aboutMe: React.FC = () => {
                 </section>
 
                 {/* Experience Section */}
-                <section className={styles.experience}>
-                    <h2 className={styles.sectionTitle}>Erfahrung und Qualifikationen</h2>
-                    <div className={styles.experienceContainer}>
-                        <div className={styles.experienceImage}>
-                            <Image
-                                src="/images/about-me/exp-image.png"
-                                alt="Erfahrung und Qualifikationen"
-                                layout="responsive"
-                                width={700}
-                                height={600}
-                            />
-                        </div>
-                        <div className={styles.experienceText}>
-                            <h3>Ausbildung und Weiterbildung:</h3>
+                <div className={styles.experience}>
+                    <div className={styles.exp_image}>
+                        <Image
+                            src="/images/about-me/exp-image.png"
+                            alt="Erfahrung und Qualifikationen"
+                            layout="responsive"
+                            width={400}
+                            height={300}
+                            className={styles.experienceImage}
+                        />
+                    </div>
+                    <div className={styles.text}>
+                        <h2>Erfahrung und Qualifikationen</h2>
+                        <div className={styles.detail}>
+                            <h3>
+                                <span className={styles.icon}>🎓</span> Ausbildung und Weiterbildung:
+                            </h3>
                             <p>
                                 Nach meinem Abitur habe ich eine professionelle Ausbildung in Fotografie
                                 abgeschlossen und besuche regelmäßig Workshops, um mein Wissen und meine
                                 Techniken zu erweitern.
                             </p>
-                            <h3>Berufserfahrung:</h3>
+                        </div>
+                        <div className={styles.detail}>
+                            <h3>
+                                <span className={styles.icon}>📸</span> Berufserfahrung:
+                            </h3>
                             <p>
-                                Seit über fünf Jahren bin ich als selbstständige Fotografin tätig. In
-                                dieser Zeit durfte ich zahlreiche unvergessliche Momente festhalten,
-                                darunter:
+                                Seit über fünf Jahren bin ich als selbstständige Fotografin tätig. In dieser
+                                Zeit durfte ich zahlreiche unvergessliche Momente festhalten, darunter:
                             </p>
                             <ul>
                                 <li>Hochzeiten und Verlobungen</li>
@@ -109,15 +115,28 @@ const aboutMe: React.FC = () => {
                                 <li>Firmen-Events und Businessporträts</li>
                                 <li>Persönliche Porträtshootings</li>
                             </ul>
-                            <h3>Ausrüstung und Technik:</h3>
+                        </div>
+                        <div className={styles.detail}>
+                            <h3>
+                                <span className={styles.icon}>🔧</span> Ausrüstung und Technik:
+                            </h3>
                             <p>
                                 Modernste Kamera- und Beleuchtungstechnik ermöglicht mir höchste Qualität.
-                                Dabei lege ich Wert auf eine natürliche Atmosphäre, in der sich meine
-                                Kunden wohlfühlen.
+                                Dabei lege ich Wert auf eine natürliche Atmosphäre, in der sich meine Kunden
+                                wohlfühlen.
+                            </p>
+                        </div>
+                        <div className={styles.detail}>
+                            <h3>
+                                <span className={styles.icon}>✨</span> Persönlicher Stil:
+                            </h3>
+                            <p>
+                                Mein Stil ist authentisch und zeitlos. Ich liebe es, Emotionen und Details
+                                einzufangen, die Geschichten erzählen und auch nach Jahren noch berühren.
                             </p>
                         </div>
                     </div>
-                </section>
+                </div>
 
                 {/* What I Do Best Section */}
                 <section className={styles.whatIDoBest}>
