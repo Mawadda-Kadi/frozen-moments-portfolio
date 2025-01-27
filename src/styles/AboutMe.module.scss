@@ -1,7 +1,7 @@
 @import '@/styles/_variables';
 
 .aboutMe {
-    background-color: $secondary-background-color;
+    background-color: $background-color;
 
     // Hero Section
     .hero {
@@ -34,12 +34,19 @@
 
     // Story Section
     .story {
+        margin-top: 8rem;
+        margin-left: 15rem;
         padding: 2rem 1.5rem;
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
 
         .sectionTitle {
+            color: $secondary-color;
             text-align: center;
             font-family: $title-font;
-            font-size: 2rem;
+            font-size: 2.5rem;
             font-weight: bold;
             margin-bottom: 1.5rem;
         }
@@ -48,10 +55,6 @@
             display: flex;
             flex-direction: column-reverse;
             gap: 2rem;
-            background-color: $background-color;
-            padding: 1.5rem;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 
             @media (min-width: 768px) {
                 flex-direction: row;
@@ -59,12 +62,42 @@
 
             .storyText {
                 flex: 1;
-                font-size: 1.3rem;
-                line-height: 1.6;
-                font-family: 'Georgia', serif;
+                font-size: 1.2rem;
+                line-height: 1.8;
+                font-family: $msg-font;
+                color: #333;
 
                 p {
-                    margin-bottom: 1rem;
+                    margin-bottom: 1.5rem;
+
+                    &:first-child {
+                        font-size: 1.4rem;
+                        font-weight: bold;
+                        color: $primary-color;
+                        border-left: 4px solid $secondary-color;
+                        padding-left: 10px;
+                    }
+
+                    &:nth-child(2) {
+                        font-style: italic;
+                        color: #666;
+                    }
+                }
+
+                .highlight {
+                    color: $primary-color;
+                    font-weight: bold;
+                    background-color: #fff8dc;
+                    /* Subtle highlight */
+                    padding: 2px 4px;
+                    border-radius: 4px;
+                }
+
+                .divider {
+                    width: 50px;
+                    height: 4px;
+                    background-color: $secondary-color;
+                    margin: 1rem 0;
                 }
             }
 
@@ -75,10 +108,10 @@
                 align-items: center;
 
                 img {
-                    width: 100%;
-                    max-width: 400px;
-                    height: auto;
-                    transition: transform 0.5s;
+                        width: 100%;
+                        max-width: 400px;
+                        height: auto;
+                        transition: transform 0.5s;
 
                         &:hover {
                             transform: translateY(-5px) scale(1.05);
@@ -90,9 +123,16 @@
 
     // Experience Section
     .experience {
+        margin-top: 3rem;
+        margin-left: 15rem;
+        margin-bottom: 10rem;
         padding: 2rem 1.5rem;
+        width: 80%;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 
         .sectionTitle {
+            color: $secondary-color;
             text-align: center;
             font-family: $title-font;
             font-size: 2rem;
@@ -104,10 +144,7 @@
             display: flex;
             flex-direction: column;
             gap: 2rem;
-            background-color: $background-color;
             padding: 1.5rem;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 
             @media (min-width: 768px) {
                 flex-direction: row;
@@ -125,9 +162,9 @@
                     height: auto;
                     transition: transform 0.5s;
 
-                        &:hover {
-                            transform: translateY(-5px) scale(1.05);
-                        }
+                    &:hover {
+                        transform: translateY(-5px) scale(1.05);
+                    }
                 }
             }
 
@@ -165,8 +202,12 @@
     .whatIDoBest {
         text-align: center;
         padding: 2rem;
+        width: 90%;
+        margin-left: 6rem;
+        margin-bottom: 7rem;
 
         h2 {
+            color: $secondary-color;
             font-size: 2.5rem;
             margin-bottom: 2rem;
         }
@@ -185,7 +226,7 @@
                 border: 1px solid $secondary-color;
                 border-radius: 10px;
                 text-align: center;
-                background-color: $background-color;
+                background-color: $secondary-background-color;
                 box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
                 transition: transform 0.3s, box-shadow 0.3s;
 
@@ -208,8 +249,8 @@
 
                 p {
                     line-height: 1.6;
-                    font-size: 1.1rem;
-                    color: #666;
+                    font-size: 1.2rem;
+                    color: $primary-color;
                 }
             }
         }
@@ -222,6 +263,7 @@
         margin-bottom: 1rem;
 
         h2 {
+            color: $secondary-color;
             font-size: 2.5rem;
             margin-bottom: 2rem;
         }
@@ -235,7 +277,7 @@
                 flex: 1;
                 margin: 0 1rem;
                 font-size: 1.2rem;
-                font-style: italic;
+                font-family: $msg-font;
                 color: $primary-color;
                 max-width: 600px;
 
@@ -272,8 +314,4 @@
             }
         }
     }
-}
-
-.footer {
-    background-color: $secondary-background-color;
 }

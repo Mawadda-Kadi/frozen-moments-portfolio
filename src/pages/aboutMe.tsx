@@ -55,13 +55,14 @@ const aboutMe: React.FC = () => {
                     <div className={styles.storyContainer}>
                         <div className={styles.storyText}>
                             <p>
-                                Schon als Kind war ich begeistert davon, wie ein einziger Moment in einem Bild für die Ewigkeit festgehalten werden kann. Mit meiner ersten Kamera, die ich als Teenager bekam, entdeckte ich meine Leidenschaft, Geschichten durch Bilder zu erzählen.
+                                Schon als Kind war ich begeistert davon, wie ein einziger Moment in einem Bild für die <span className="highlight">Ewigkeit</span> festgehalten werden kann.
                             </p>
                             <p>
-                                Ein prägender Moment war ein spontanes Foto meiner Eltern im Urlaub, das voller Emotionen und Authentizität steckte. In diesem Augenblick wusste ich, dass ich diese Kraft der Fotografie nutzen möchte, um besondere Augenblicke für andere festzuhalten.
+                                Ein prägender Moment war ein spontanes Foto meiner Eltern im Urlaub, das voller <span className="highlight">Emotionen</span> und Authentizität steckte.
                             </p>
+                            <div className="divider"></div>
                             <p>
-                                Heute ist die Fotografie für mich mehr als nur ein Beruf – sie ist meine Leidenschaft, mit der ich Menschen dabei helfe, die schönsten Momente ihres Lebens unvergesslich zu machen.
+                                Heute ist die Fotografie für mich mehr als nur ein Beruf – sie ist meine Leidenschaft, mit der ich Menschen dabei helfe, die schönsten Momente ihres Lebens <span className="highlight">unvergesslich</span> zu machen.
                             </p>
                         </div>
                         <div className={styles.storyImage}>
@@ -69,8 +70,8 @@ const aboutMe: React.FC = () => {
                                 src="/images/about-me/emma-story.PNG"
                                 alt="Die Geschichte hinter meiner Kamera"
                                 layout="responsive"
-                                width={700}
-                                height={600}
+                                width={400}
+                                height={400}
                             />
                         </div>
                     </div>
