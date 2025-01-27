@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import styles from '@/styles/Contact.module.scss';
@@ -13,7 +12,7 @@ const contact: React.FC = () => {
                 <div className={styles.content}>
                     {/* Kontaktformular */}
                     <div className={styles.formContainer}>
-                        <form className={styles.form} method="POST" action="/api/contact">
+                        <form className={styles.form} method="POST" action="/api/auth/callback">
                             <label htmlFor="reason">Wie können wir Ihnen helfen?</label>
                             <input type="text" id="reason" name="reason" placeholder="Ihr Anliegen oder Grund" required />
 
