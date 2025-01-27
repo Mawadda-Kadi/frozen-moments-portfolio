@@ -27,7 +27,7 @@ const Gallery = () => {
 
     useEffect(() => {
         const fetchPhotos = async () => {
-            const allPhotos = [
+            const allPhotos = [ 
                 { id: 1, src: '/images/gallery/birthday1.jpg', name: 'Photo 1', category: 'birthdays' },
                 { id: 2, src: '/images/gallery/business1.jpg', name: 'Photo 2', category: 'business_events' },
                 { id: 3, src: '/images/gallery/baby_shower1.jpg', name: 'Photo 3', category: 'baby_showers' },
