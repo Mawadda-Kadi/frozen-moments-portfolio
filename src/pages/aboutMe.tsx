@@ -82,7 +82,7 @@ const aboutMe: React.FC = () => {
                     <div className={styles.experienceContainer}>
                         <div className={styles.experienceImage}>
                             <Image
-                                src="/images/about-me/emma-exp.jpg"
+                                src="/images/about-me/exp-image.png"
                                 alt="Erfahrung und Qualifikationen"
                                 layout="responsive"
                                 width={700}
@@ -113,11 +113,6 @@ const aboutMe: React.FC = () => {
                                 Modernste Kamera- und Beleuchtungstechnik ermöglicht mir höchste Qualität.
                                 Dabei lege ich Wert auf eine natürliche Atmosphäre, in der sich meine
                                 Kunden wohlfühlen.
-                            </p>
-                            <h3>Persönlicher Stil:</h3>
-                            <p>
-                                Mein Stil ist authentisch und zeitlos. Ich fange Emotionen und Details ein,
-                                die Geschichten erzählen und auch nach Jahren noch berühren.
                             </p>
                         </div>
                     </div>
