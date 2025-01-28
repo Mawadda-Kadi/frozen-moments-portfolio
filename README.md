@@ -21,16 +21,16 @@ npm run dev
 
 ## Purpose and Goals
 
-### Showcase Excellence:
+- Showcase Excellence:
 Display the photographer’s work in a visually compelling and organized manner.
 
-### Engage Clients:
+- Engage Clients:
 Provide an interactive platform for potential clients to explore, appreciate, and connect with the photographer’s services.
 
-### Build Trust and Credibility:
+- Build Trust and Credibility:
 Share personal stories, expertise, and testimonials to establish confidence in the photographer’s professionalism and artistry.
 
-### Facilitate Communication:
+- Facilitate Communication:
 Offer intuitive navigation and easy-to-access contact options for inquiries and bookings.
 
 ---
@@ -44,43 +44,60 @@ Offer intuitive navigation and easy-to-access contact options for inquiries and 
 ### User Experience (UX) Enhancements:
 
 - **Design Philosophy**
-    ○ The website embraces a minimalistic and elegant design with a warm cream background, soft accent colors, and modern typography to keep the focus on the photos. Subtle animations and interactive elements enrich the user experience while maintaining a professional tone.
+
+  ○ The website embraces a minimalistic and elegant design with a warm cream background, soft accent colors, and modern typography to keep the focus on the photos. Subtle animations and interactive elements enrich the user experience while maintaining a professional tone.
 
 - **Intuitive Navigation**
-    ○ The website structure is designed for ease of use, with a consistent header, footer, and navigation bar across all pages. Users can quickly find what they need without confusion.
+
+  ○ The website structure is designed for ease of use, with a consistent header, footer, and navigation bar across all pages. Users can quickly find what they need without confusion.
 
 - **Accessibility**
-    ○ Accessibility best practices are implemented, including proper alt text for images, semantic HTML, keyboard navigation support, and ARIA roles to enhance usability for all users, including those with disabilities.
+
+  ○ Accessibility best practices are implemented, including proper alt text for images, semantic HTML, keyboard navigation support, and ARIA roles to enhance usability for all users, including those with disabilities.
 
 - **Fast Loading Times**
-    ○ Optimized images, efficient code, and a lightweight design ensure fast loading times, providing a smooth browsing experience.
+
+  ○ Optimized images, efficient code, and a lightweight design ensure fast loading times, providing a smooth browsing experience.
 
 - **Responsive Design**
-    ○ Every page and feature adapts seamlessly to different screen sizes, ensuring usability on desktops, tablets, and smartphones.
+
+  ○ Every page and feature adapts seamlessly to different screen sizes, ensuring usability on desktops, tablets, and smartphones.
 
 - **Visual Consistency**
-    ○ A clean, cohesive design with consistent colors, typography, and spacing creates a professional and aesthetically pleasing experience.
+
+  ○ A clean, cohesive design with consistent colors, typography, and spacing creates a professional and aesthetically pleasing experience.
 
 - **Interactive Feedback**
-    ○ Interactive elements like hover animations, button highlights, and status messages provide users with immediate feedback, making the interface more engaging.
+
+  ○ Interactive elements like hover animations, button highlights, and status messages provide users with immediate feedback, making the interface more engaging.
 
 - **Error Prevention and Handling**
-    ○ Forms and interactive features include validation to prevent user errors, along with clear, actionable error messages when something goes wrong.
+
+  ○ Forms and interactive features include validation to prevent user errors, along with clear, actionable error messages when something goes wrong.
 
 ---
 
 ## Key Features
 
 ### Header:
+
+![Image](https://github.com/user-attachments/assets/90aa2032-9f7a-43a7-b232-db319b582c90)
+
 - **Logo and Navigation Links**
-    ○ The header prominently displays the logo, title, and navigation links, ensuring consistent branding and intuitive access to key sections.
+
+  ○ The header prominently displays the logo, title, and navigation links, ensuring consistent branding and intuitive access to key sections.
 - **Global Accessibility**
-    ○ The header is visible and functional across all pages of the website, ensuring seamless navigation.
+
+  ○ The header is visible and functional across all pages of the website, ensuring seamless navigation.
 - **Responsive Design**
-    ○ The header adapts to various screen sizes, maintaining clear visibility and usability on desktops, tablets, and mobile devices.
+
+  ○ The header adapts to various screen sizes, maintaining clear visibility and usability on desktops, tablets, and mobile devices.
 
 
 ### Footer:
+
+![Image](https://github.com/user-attachments/assets/137fe63e-4f82-4eee-bb87-9e4d7ab69660)
+
 - **Impressum and Copyright**
     ○ The footer includes legally required information (Impressum) and a copyright notice, showcasing professionalism and transparency.
 - **Social Media Integration**
@@ -102,11 +119,19 @@ Offer intuitive navigation and easy-to-access contact options for inquiries and 
 
 
 ### Gallery Page:
+
+![Image](https://github.com/user-attachments/assets/692e67ae-639b-4fe5-9904-6c9dc0359ed8)
+
 - **Photo Grid Layout**
     ○ A 3-column grid layout showcases all photos, with each photo’s name displayed beneath for clarity.
 - **Category Filter**
+- ![Image](https://github.com/user-attachments/assets/db58ea7f-2c38-4150-89c8-05107cc7cf81)
+  
     ○ Filter buttons enable users to sort photos by category for efficient browsing.
 - **Interactive Photo View**
+
+  ![Image](https://github.com/user-attachments/assets/86d8f1e5-30c2-434a-a6a2-e86e48cee632)
+  
     ○ Clicking on a photo opens a lightbox effect, enlarging the image and enabling carousel navigation for seamless exploration.
 - **Photo Actions**
     ○ Two interactive icons for each photo:
@@ -119,6 +144,9 @@ Offer intuitive navigation and easy-to-access contact options for inquiries and 
 
 
 ### Photo Details Page:
+
+![Image](https://github.com/user-attachments/assets/63ef9302-a2ff-43e5-b803-3f443dfc830e)
+
 - **Photo Display and Information**
     ○ The selected photo is displayed enlarged on the left, accompanied by a detailed information card on the right, including:
         - Photo name, category, equipment details (camera, lens, position), location, date, and a description.
@@ -129,20 +157,40 @@ Offer intuitive navigation and easy-to-access contact options for inquiries and 
 
 
 ### About Me Page:
+
+![Image](https://github.com/user-attachments/assets/30103cdf-0125-413a-98f5-61b9a3f20656)
+
 - **Hero Image**
     ○ Features a semi-transparent hero image of the photographer with the title, “Willkommen in meiner Welt der Fotografie.”
-- **Personal Story and Experience**
-    ○ **Left Section**: A narrative about the photographer's personal journey and experiences.
-    ○ **Right Section**: A portfolio image that highlights professionalism.
+- **Personal Story**
+- 
+![Image](https://github.com/user-attachments/assets/eddf0c88-5016-41ad-911d-f42ce916309c)
+  
+    ○ On the left: A section narrating the personal story. 
+    ○ On the right: A portfolio Image 
+- **Experience**
+- 
+  ![Image](https://github.com/user-attachments/assets/55c43628-38c5-4520-9afc-3674e01dd9b7)
+
+    ○ On the left: A section displaying photographer’s experience.
+    ○ On the right: A photo of an equipment, emphasizing professionalism. 
 - **Core Skills**
+
+  ![Image](https://github.com/user-attachments/assets/7aad193a-d4ea-4ad5-a2e0-f07cb50d2a22)
+  
     ○ A visually appealing grid of the photographer’s top 3 skills, each with a short description, is showcased in a “What I Do Best” section.
 - **Customer Testimonials**
+  ![Image](https://github.com/user-attachments/assets/c77e9a87-54f2-4ad3-8c87-5adeda0d8fac)
+  
     ○ A carousel displays customer comments, enhancing credibility and trustworthiness.
 - **Responsive Design**
     ○ The hero image, skill grid, and testimonial carousel adapt seamlessly across all devices.
 
 
 ### Contact Page:
+
+![Image](https://github.com/user-attachments/assets/2fc63930-5e01-4311-ac14-4624d77121bd)
+
 - **Page Title**
     ○ "Planen wir etwas Besonderes – lassen Sie uns Ihre Vision verwirklichen!" This sets an inviting and professional tone, emphasizing collaboration and creativity.
 - **Dynamic Status Alerts**
@@ -159,19 +207,19 @@ Offer intuitive navigation and easy-to-access contact options for inquiries and 
 ## Wireframes
 
 ### Home Page
-
+![Image](https://github.com/user-attachments/assets/b630f1c1-b9f7-46f7-9017-545e066d647a)
 
 ### Gallery Page:
-
+![Image](https://github.com/user-attachments/assets/47b41c01-34b4-4447-a602-1628ae8f8535)
 
 ### Photo Details Page:
-
+![Image](https://github.com/user-attachments/assets/dc934936-1876-4608-b7a0-4aed7e9b83d3)
 
 ### About Me Page:
-
+![Image](https://github.com/user-attachments/assets/e2942630-9b42-46cf-9bd7-607dabf52dbb)
 
 ### Contact Page:
-
+![Image](https://github.com/user-attachments/assets/fa0d19a1-cb56-40f1-8f83-29fe7c5cff86)
 
 
 ---
