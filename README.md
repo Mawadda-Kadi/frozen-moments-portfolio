@@ -2,23 +2,203 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+- First, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Open a deployed site:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Website Overview: Frozen Moments by Emma Schmidt
+
+**"Frozen Moments by Emma Schmidt"** is a professional photography portfolio website designed to showcase captivating event photography, including weddings, birthdays, baby showers, graduations, personal photoshoots, and business events. The website focuses on delivering an elegant, user-friendly experience while highlighting the photographer’s unique ability to preserve life’s most meaningful moments.
+
+---
+
+## Purpose and Goals
+
+### Showcase Excellence:
+Display the photographer’s work in a visually compelling and organized manner.
+
+### Engage Clients:
+Provide an interactive platform for potential clients to explore, appreciate, and connect with the photographer’s services.
+
+### Build Trust and Credibility:
+Share personal stories, expertise, and testimonials to establish confidence in the photographer’s professionalism and artistry.
+
+### Facilitate Communication:
+Offer intuitive navigation and easy-to-access contact options for inquiries and bookings.
+
+---
+
+## Target Audience
+- Individuals or businesses seeking high-quality event photography services.
+- Clients who value professionalism, artistry, and personal engagement in their photographer.
+
+---
+
+### User Experience (UX) Enhancements:
+
+- **Design Philosophy**
+    ○ The website embraces a minimalistic and elegant design with a warm cream background, soft accent colors, and modern typography to keep the focus on the photos. Subtle animations and interactive elements enrich the user experience while maintaining a professional tone.
+
+- **Intuitive Navigation**
+    ○ The website structure is designed for ease of use, with a consistent header, footer, and navigation bar across all pages. Users can quickly find what they need without confusion.
+
+- **Accessibility**
+    ○ Accessibility best practices are implemented, including proper alt text for images, semantic HTML, keyboard navigation support, and ARIA roles to enhance usability for all users, including those with disabilities.
+
+- **Fast Loading Times**
+    ○ Optimized images, efficient code, and a lightweight design ensure fast loading times, providing a smooth browsing experience.
+
+- **Responsive Design**
+    ○ Every page and feature adapts seamlessly to different screen sizes, ensuring usability on desktops, tablets, and smartphones.
+
+- **Visual Consistency**
+    ○ A clean, cohesive design with consistent colors, typography, and spacing creates a professional and aesthetically pleasing experience.
+
+- **Interactive Feedback**
+    ○ Interactive elements like hover animations, button highlights, and status messages provide users with immediate feedback, making the interface more engaging.
+
+- **Error Prevention and Handling**
+    ○ Forms and interactive features include validation to prevent user errors, along with clear, actionable error messages when something goes wrong.
+
+---
+
+## Key Features
+
+### Header:
+- **Logo and Navigation Links**
+    ○ The header prominently displays the logo, title, and navigation links, ensuring consistent branding and intuitive access to key sections.
+- **Global Accessibility**
+    ○ The header is visible and functional across all pages of the website, ensuring seamless navigation.
+- **Responsive Design**
+    ○ The header adapts to various screen sizes, maintaining clear visibility and usability on desktops, tablets, and mobile devices.
+
+
+### Footer:
+- **Impressum and Copyright**
+    ○ The footer includes legally required information (Impressum) and a copyright notice, showcasing professionalism and transparency.
+- **Social Media Integration**
+    ○ Links to social media platforms are presented as clickable icons for easy user engagement.
+- **Global Accessibility**
+    ○ The footer is accessible from every page, providing essential information at all times.
+- **Responsive Design**
+    ○ The footer dynamically adjusts to fit any screen size while maintaining readability and functionality.
+
+
+### Home Page:
+- **Hero Section with Transparent Images**
+    ○ Features three transparent hero images: a central image of the photographer with a camera, flanked by two images representing your photography themes.
+    ○ A short introduction overlays the hero images, setting the tone for the site.
+- **Interactive Animations**
+    ○ Animations are triggered on hover, adding a dynamic and engaging touch.
+- **Responsive Design**
+    ○ The layout of the hero section and images adjusts fluidly across different devices, ensuring a visually appealing experience.
+
+
+### Gallery Page:
+- **Photo Grid Layout**
+    ○ A 3-column grid layout showcases all photos, with each photo’s name displayed beneath for clarity.
+- **Category Filter**
+    ○ Filter buttons enable users to sort photos by category for efficient browsing.
+- **Interactive Photo View**
+    ○ Clicking on a photo opens a lightbox effect, enlarging the image and enabling carousel navigation for seamless exploration.
+- **Photo Actions**
+    ○ Two interactive icons for each photo:
+        - **“See More”**: Redirects users to a detailed photo page.
+        - **“Share”**: Enables photo sharing via social media or other platforms.
+- **Pagination**
+    ○ The gallery is paginated, displaying up to 18 photos per page. Users can navigate between pages using "Next" and "Previous" buttons, with a clear indication of the current page.
+- **Responsive Design**
+    ○ The grid layout, filter options, and interactive features are optimized for different screen sizes, providing a smooth user experience on any device.
+
+
+### Photo Details Page:
+- **Photo Display and Information**
+    ○ The selected photo is displayed enlarged on the left, accompanied by a detailed information card on the right, including:
+        - Photo name, category, equipment details (camera, lens, position), location, date, and a description.
+- **Navigation**
+    ○ A button at the bottom of the page allows users to conveniently return to the gallery.
+- **Responsive Design**
+    ○ The layout adjusts dynamically for desktops, tablets, and mobile devices, ensuring all information remains accessible and visually appealing.
+
+
+### About Me Page:
+- **Hero Image**
+    ○ Features a semi-transparent hero image of the photographer with the title, “Willkommen in meiner Welt der Fotografie.”
+- **Personal Story and Experience**
+    ○ **Left Section**: A narrative about the photographer's personal journey and experiences.
+    ○ **Right Section**: A portfolio image that highlights professionalism.
+- **Core Skills**
+    ○ A visually appealing grid of the photographer’s top 3 skills, each with a short description, is showcased in a “What I Do Best” section.
+- **Customer Testimonials**
+    ○ A carousel displays customer comments, enhancing credibility and trustworthiness.
+- **Responsive Design**
+    ○ The hero image, skill grid, and testimonial carousel adapt seamlessly across all devices.
+
+
+### Contact Page:
+- **Page Title**
+    ○ "Planen wir etwas Besonderes – lassen Sie uns Ihre Vision verwirklichen!" This sets an inviting and professional tone, emphasizing collaboration and creativity.
+- **Dynamic Status Alerts**
+    ○ Success and error messages are displayed prominently at the top of the page in green and red, respectively.
+- **Responsive Design**
+    ○ The contact form is fully responsive, ensuring usability across all devices.
+        - Form fields are designed with ample size and spacing for a comfortable user experience.
+- **Backend Integration**
+    ○ Emails are processed and sent to a predefined address using the `/api/send-email` API route, powered by SendGrid.
+
+
+---
+
+## Wireframes
+
+### Home Page
+
+
+### Gallery Page:
+
+
+### Photo Details Page:
+
+
+### About Me Page:
+
+
+### Contact Page:
+
+
+
+---
+
+## Frameworks, Libraries, and Programs Used
+
+
+---
+
+## Credits
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Learn More
 
@@ -29,8 +209,12 @@ To learn more about Next.js, take a look at the following resources:
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
+---
+
 ## Deploy on Vercel
 
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+---
