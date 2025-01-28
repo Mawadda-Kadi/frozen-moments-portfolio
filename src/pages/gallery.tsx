@@ -4,6 +4,7 @@ import Footer from '@/components/Footer';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import Lightbox from '@/components/Lightbox';
+import '@/styles/globals.scss';
 import styles from '@/styles/Gallery.module.scss';
 import { FiEye, FiShare2 } from 'react-icons/fi';
 

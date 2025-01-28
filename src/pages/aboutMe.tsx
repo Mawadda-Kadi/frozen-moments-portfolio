@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { FiCamera, FiEdit, FiVideo } from "react-icons/fi";
 import Image from "next/image";
+import '@/styles/globals.scss';
 import styles from "@/styles/AboutMe.module.scss";
 
 const aboutMe: React.FC = () => {

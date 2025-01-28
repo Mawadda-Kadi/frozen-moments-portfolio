@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import '@/styles/globals.scss';
 import styles from '@/styles/PhotoDetails.module.scss';
 
 

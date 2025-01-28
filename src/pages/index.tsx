@@ -47,6 +47,62 @@ const Home = () => {
                             </p>
                         </div>
                     </section>
+                    {/* Featured Services Section */}
+                    <section className={styles.featuredServices}>
+                        <h3>Unsere Leistungen</h3>
+                        <div className={styles.services}>
+                            <div className={styles.service}>
+                                <Image
+                                    src="/images/services/wedding.jpg"
+                                    alt="Weddings"
+                                    width={300}
+                                    height={200}
+                                />
+                                <h4>Hochzeiten</h4>
+                                <p>Perfekt eingefangene Momente Ihres besonderen Tages.</p>
+                            </div>
+                            <div className={styles.service}>
+                                <Image
+                                    src="/images/services/portrait.jpg"
+                                    alt="Portraits"
+                                    width={300}
+                                    height={200}
+                                />
+                                <h4>Porträts</h4>
+                                <p>Authentische und unvergessliche persönliche Aufnahmen.</p>
+                            </div>
+                            <div className={styles.service}>
+                                <Image
+                                    src="/images/services/event.jpg"
+                                    alt="Events"
+                                    width={300}
+                                    height={200}
+                                />
+                                <h4>Events</h4>
+                                <p>Professionelle Fotografie für Ihre geschäftlichen oder privaten Events.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    {/* Call-to-Action Section */}
+                    <section className={styles.callToAction}>
+                        <h3>Planen Sie Ihr nächstes Shooting mit uns</h3>
+                        <p>
+                            Lassen Sie uns gemeinsam unvergessliche Erinnerungen schaffen.
+                        </p>
+                        <div className={styles.buttons}>
+                            <button
+                                className={`${styles.ctaButton} ${styles.primaryButton}`}
+                                onClick={() => alert('Termin Buchen')}>
+                                Termin Buchen
+                            </button>
+                            <button
+                                className={`${styles.ctaButton} ${styles.secondaryButton}`}
+                                onClick={() => alert('Galerie Ansehen')}>
+                                Galerie Ansehen
+                            </button>
+                        </div>
+                    </section>
                 </main >
                 <Footer />
             </div >

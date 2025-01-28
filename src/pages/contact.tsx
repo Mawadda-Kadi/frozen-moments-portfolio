@@ -1,6 +1,7 @@
 import React, { useState, ChangeEvent, FormEvent } from 'react';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
+import '@/styles/globals.scss';
 import styles from '@/styles/Contact.module.scss';
 
 export default function Contact() {
