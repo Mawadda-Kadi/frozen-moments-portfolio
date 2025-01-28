@@ -218,6 +218,7 @@ Offer intuitive navigation and easy-to-access contact options for inquiries and 
     ○ A carousel displays customer comments, enhancing credibility and trustworthiness.
   
 - **Responsive Design**
+  
     ○ The hero image, skill grid, and testimonial carousel adapt seamlessly across all devices.
 
 
@@ -263,29 +264,43 @@ Offer intuitive navigation and easy-to-access contact options for inquiries and 
 
 ---
 
-## Frameworks, Libraries, and Programs Used
-
-
----
-
-## Credits
-
+## Languages 
+- TypeScript 
+- JavaScript 
 
 ---
 
+## Framework, Libraries, and tools 
+- Nest.js 
+- React 
+- SASS 
+- Eslint 
 
+---
 
+## Technologies
+- TinyPNG (https://tinypng.com/): Used for compressing photos to reduce file size without compromising quality.
+- iLoveIMG (https://www.iloveimg.com/): Used for basic photo editing and optimization tasks.
+- ChatGPT (https://chatgpt.com/): Used for generating content, assisting with coding, and providing feedback.
+- Procreate App (https://procreate.com/): Used for editing and creating logos and other graphic design tasks.
+- SendGrid (https://app.sendgrid.com/): Used as the API route for handling email-based contact forms.
+- Google Fonts (https://fonts.google.com/): Used for integrating high-quality and web-friendly fonts.
+- Font Awesome (https://fontawesome.com/icons): Used for incorporating icons into the project.
+- React Icons (https://react-icons.github.io/react-icons/icons/fa6/): Used for adding Font Awesome and other icon libraries seamlessly into React components.
+- Vercel (https://vercel.com/): Used for deploying.
 
+---
 
+## References: 
+- Next.js Documetation https://nextjs.org/docs 
+- Vercel Documentation https://vercel.com/docs 
 
+---
 
+Credit: 
+- All the photos are from iStock https://www.istockphoto.com/de 
 
-
-
-
-
-
-
+---
 
 ## Learn More
 
