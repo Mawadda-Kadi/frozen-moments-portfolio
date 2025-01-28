@@ -41,7 +41,7 @@ const Gallery = () => {
                 { id: 11, src: '/images/gallery/wedding20.jpg', name: 'Feuerwerk der Liebe', category: 'weddings' },
                 { id: 12, src: '/images/gallery/personal_shooting6.jpg', name: 'Bergträume', category: 'personal_photoshoots' },
                 { id: 13, src: '/images/gallery/wedding6.jpg', name: 'Strandhochzeitstraum', category: 'weddings' },
-                { id: 14, src: '/images/gallery/birthday9.jpg', name: 'Geburtstagsspaß mit dem besten Freund', category: 'birthdays' },
+                { id: 14, src: '/images/gallery/birthday9.jpg', name: 'Geburtstagsspaß pur', category: 'birthdays' },
                 { id: 15, src: '/images/gallery/personal_shooting8.jpg', name: 'Familienglück', category: 'personal_photoshoots' },
                 { id: 16, src: '/images/gallery/baby_shower11.jpg', name: 'Vorfreude auf das Wunder', category: 'baby_showers' },
                 { id: 17, src: '/images/gallery/wedding8.jpg', name: 'Liebe in den Wolken', category: 'weddings' },

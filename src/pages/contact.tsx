@@ -55,7 +55,7 @@ export default function Contact() {
                     </div>
                 )}
 
-                <h1 className={styles.title}>Kontaktieren Sie uns</h1>
+                <h1 className={styles.title}>Planen wir etwas Besonderes <br/>lassen Sie uns Ihre Vision verwirklichen!</h1>
                 <div className={styles.content}>
                     <div className={styles.formContainer}>
                         <form className={styles.form} onSubmit={handleSubmit}>
@@ -64,7 +64,7 @@ export default function Contact() {
                                 type="text"
                                 id="name"
                                 name="name"
-                                placeholder="Ihr Name"
+                                placeholder="Ihr vollständiger Name (für die persönliche Ansprache)"
                                 value={form.name}
                                 onChange={handleChange}
                                 required
@@ -75,7 +75,7 @@ export default function Contact() {
                                 type="email"
                                 id="email"
                                 name="email"
-                                placeholder="Ihre E-Mail-Adresse"
+                                placeholder="E-Mail-Adresse für unsere Rückmeldung"
                                 value={form.email}
                                 onChange={handleChange}
                                 required
@@ -86,7 +86,7 @@ export default function Contact() {
                                 type="tel"
                                 id="telefonnummer"
                                 name="telefonnummer"
-                                placeholder="Ihre Telefonnummer"
+                                placeholder="Optional: Telefonnummer für schnellere Kontaktaufnahme"
                                 value={form.telefonnummer}
                                 onChange={handleChange}
                             />
@@ -95,7 +95,7 @@ export default function Contact() {
                             <textarea
                                 id="nachricht"
                                 name="nachricht"
-                                placeholder="Ihre Nachricht"
+                                placeholder="„Beschreiben Sie kurz Ihr Anliegen (z. B. Hochzeitsshooting, Eventfotografie)“"
                                 value={form.nachricht}
                                 onChange={handleChange}
                                 required

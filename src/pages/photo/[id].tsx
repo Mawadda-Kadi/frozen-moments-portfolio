@@ -192,7 +192,7 @@ const PhotoDetails = () => {
                 {
                     id: 14,
                     src: '/images/gallery/birthday9.jpg',
-                    name: 'Geburtstagsspaß mit dem besten Freund',
+                    name: 'Geburtstagsspaß pur',
                     category: 'Geburtstage',
                     camera: 'Sony Alpha 7 III',
                     lens: 'FE 50mm F1.8',
