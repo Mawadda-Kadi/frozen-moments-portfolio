@@ -6,7 +6,7 @@ import Image from "next/image";
 import '@/styles/globals.scss';
 import styles from "@/styles/AboutMe.module.scss";
 
-const aboutMe: React.FC = () => {
+const AboutMe: React.FC = () => {
     const [currentCommentIndex, setCurrentCommentIndex] = useState(0);
 
     const testimonials = [
@@ -178,7 +178,7 @@ const aboutMe: React.FC = () => {
                             ◀
                         </button>
                         <div className={styles.comment}>
-                            <p>"{testimonials[currentCommentIndex]}"</p>
+                            <p>&quot;{testimonials[currentCommentIndex]}&quot;</p>
                         </div>
                         <button className={styles.next} onClick={handleNext}>
                             ▶
@@ -191,4 +191,4 @@ const aboutMe: React.FC = () => {
     );
 };
 
-export default aboutMe;
+export default AboutMe;

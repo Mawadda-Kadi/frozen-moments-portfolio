@@ -24,7 +24,7 @@ const outfit = Outfit({
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
-        <div className={`${breeSerif.variable} ${oleoScript.variable}`}>
+        <div className={`${breeSerif.variable} ${oleoScript.variable}  ${outfit.variable}`}>
             <Component {...pageProps} />
         </div>
     );
