@@ -56,7 +56,8 @@ export default function Contact() {
                     </div>
                 )}
 
-                <h1 className={styles.title}>Planen wir etwas Besonderes <br/>lassen Sie uns Ihre Vision verwirklichen!</h1>
+                <h1 className={styles.title}>Planen wir etwas Besonderes</h1>
+                <p className={styles.subTitle}>lassen Sie uns Ihre Vision verwirklichen!</p>
                 <div className={styles.content}>
                     <div className={styles.formContainer}>
                         <form className={styles.form} onSubmit={handleSubmit}>

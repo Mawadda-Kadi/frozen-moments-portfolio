@@ -1,7 +1,7 @@
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import Image from 'next/image';
-
+import Link from 'next/link';
 import '@/styles/globals.scss';
 import styles from '@/styles/Home.module.scss';
 
@@ -53,7 +53,7 @@ const Home = () => {
                         <div className={styles.services}>
                             <div className={styles.service}>
                                 <Image
-                                    src="/images/services/wedding.jpg"
+                                    src="/images/home/wedding.jpg"
                                     alt="Weddings"
                                     width={300}
                                     height={200}
@@ -63,7 +63,7 @@ const Home = () => {
                             </div>
                             <div className={styles.service}>
                                 <Image
-                                    src="/images/services/portrait.jpg"
+                                    src="/images/home/portrait.jpg"
                                     alt="Portraits"
                                     width={300}
                                     height={200}
@@ -73,7 +73,7 @@ const Home = () => {
                             </div>
                             <div className={styles.service}>
                                 <Image
-                                    src="/images/services/event.jpg"
+                                    src="/images/home/event.jpg"
                                     alt="Events"
                                     width={300}
                                     height={200}
@@ -91,16 +91,14 @@ const Home = () => {
                             Lassen Sie uns gemeinsam unvergessliche Erinnerungen schaffen.
                         </p>
                         <div className={styles.buttons}>
-                            <button
-                                className={`${styles.ctaButton} ${styles.primaryButton}`}
-                                onClick={() => alert('Termin Buchen')}>
-                                Termin Buchen
-                            </button>
-                            <button
-                                className={`${styles.ctaButton} ${styles.secondaryButton}`}
-                                onClick={() => alert('Galerie Ansehen')}>
-                                Galerie Ansehen
-                            </button>
+                            <div className={styles.buttons}>
+                                <Link href="/gallery" className={`${styles.ctaButton} ${styles.secondaryButton}`}>
+                                    Galerie Ansehen
+                                </Link>
+                                <Link href="/contact" className={`${styles.ctaButton} ${styles.primaryButton}`}>
+                                    Termin Buchen
+                                </Link>
+                            </div>
                         </div>
                     </section>
                 </main >

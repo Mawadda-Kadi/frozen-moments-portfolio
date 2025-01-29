@@ -102,34 +102,48 @@ Offer intuitive navigation and easy-to-access contact options for inquiries and 
 
 - **Impressum and Copyright**
 
-    ○ The footer includes legally required information (Impressum) and a copyright notice, showcasing professionalism and transparency.
+    - The footer includes legally required information (Impressum) and a copyright notice, showcasing professionalism and transparency.
 
 - **Social Media Integration**
 
-    ○ Links to social media platforms are presented as clickable icons for easy user engagement.
+    - Links to social media platforms are presented as clickable icons for easy user engagement.
 
 - **Global Accessibility**
 
-    ○ The footer is accessible from every page, providing essential information at all times.
+    - The footer is accessible from every page, providing essential information at all times.
 
 - **Responsive Design**
 
-    ○ The footer dynamically adjusts to fit any screen size while maintaining readability and functionality.
+    - The footer dynamically adjusts to fit any screen size while maintaining readability and functionality.
 
 
 ### Home Page:
 - **Hero Section with Transparent Images**
 
-    ○ Features three transparent hero images: a central image of the photographer with a camera, flanked by two images representing your photography themes.
-    ○ A short introduction overlays the hero images, setting the tone for the site.
+    - Features three transparent hero images: a central image of the photographer with a camera, flanked by two images representing your photography themes.
+    - A short introduction overlays the hero images, setting the tone for the site.
+
+- **Featured Services Section**
+
+  - Highlights three primary photography services: Weddings, Portraits, and Events.
+  - Each service is displayed with an image, a title, and a brief description to communicate the offerings clearly.
+  - Ensures accessibility and attractiveness with visually appealing layout and content.
+
+- **Call-to-Action Section**
+
+  - Includes a prominent heading encouraging users to take action ("Planen Sie Ihr nächstes Shooting mit uns").
+  - Provides two distinct call-to-action buttons:
+  - "Galerie Ansehen" navigates to the gallery page.
+  - "Termin Buchen" directs users to the contact page to book an appointment.
+  - Styled with responsive design for seamless interaction on all devices.
 
 - **Interactive Animations**
 
-    ○ Animations are triggered on hover, adding a dynamic and engaging touch.
+  - Animations are triggered on hover, adding a dynamic and engaging touch to images and buttons.
 
 - **Responsive Design**
 
-    ○ The layout of the hero section and images adjusts fluidly across different devices, ensuring a visually appealing experience.
+  - The layout of the hero section, featured services, and call-to-action buttons adjusts fluidly across different devices, ensuring a visually appealing and functional experience on desktops, tablets, and smartphones.
 
 
 ### Gallery Page:
@@ -138,32 +152,32 @@ Offer intuitive navigation and easy-to-access contact options for inquiries and 
 
 - **Photo Grid Layout**
 
-    ○ A 3-column grid layout showcases all photos, with each photo’s name displayed beneath for clarity.
+    - A 3-column grid layout showcases all photos, with each photo’s name displayed beneath for clarity.
 
 - **Category Filter**
   ![Image](https://github.com/user-attachments/assets/db58ea7f-2c38-4150-89c8-05107cc7cf81)
 
-    ○ Filter buttons enable users to sort photos by category for efficient browsing.
+    - Filter buttons enable users to sort photos by category for efficient browsing.
 
 - **Interactive Photo View**
 
   ![Image](https://github.com/user-attachments/assets/86d8f1e5-30c2-434a-a6a2-e86e48cee632)
 
-    ○ Clicking on a photo opens a lightbox effect, enlarging the image and enabling carousel navigation for seamless exploration.
+    - Clicking on a photo opens a lightbox effect, enlarging the image and enabling carousel navigation for seamless exploration.
 
 - **Photo Actions**
 
-    ○ Two interactive icons for each photo:
+    - Two interactive icons for each photo:
         - **“See More”**: Redirects users to a detailed photo page.
         - **“Share”**: Enables photo sharing via social media or other platforms.
 
 - **Pagination**
 
-    ○ The gallery is paginated, displaying up to 18 photos per page. Users can navigate between pages using "Next" and "Previous" buttons, with a clear indication of the current page.
+    - The gallery is paginated, displaying up to 18 photos per page. Users can navigate between pages using "Next" and "Previous" buttons, with a clear indication of the current page.
 
 - **Responsive Design**
 
-    ○ The grid layout, filter options, and interactive features are optimized for different screen sizes, providing a smooth user experience on any device.
+    - The grid layout, filter options, and interactive features are optimized for different screen sizes, providing a smooth user experience on any device.
 
 
 ### Photo Details Page:
@@ -172,16 +186,16 @@ Offer intuitive navigation and easy-to-access contact options for inquiries and 
 
 - **Photo Display and Information**
 
-    ○ The selected photo is displayed enlarged on the left, accompanied by a detailed information card on the right, including:
+    - The selected photo is displayed enlarged on the left, accompanied by a detailed information card on the right, including:
         - Photo name, category, equipment details (camera, lens, position), location, date, and a description.
 
 - **Navigation**
 
-    ○ A button at the bottom of the page allows users to conveniently return to the gallery.
+    - A button at the bottom of the page allows users to conveniently return to the gallery.
 
 - **Responsive Design**
 
-    ○ The layout adjusts dynamically for desktops, tablets, and mobile devices, ensuring all information remains accessible and visually appealing.
+    - The layout adjusts dynamically for desktops, tablets, and mobile devices, ensuring all information remains accessible and visually appealing.
 
 
 ### About Me Page:
@@ -190,36 +204,36 @@ Offer intuitive navigation and easy-to-access contact options for inquiries and 
 
 - **Hero Image**
 
-    ○ Features a semi-transparent hero image of the photographer with the title, “Willkommen in meiner Welt der Fotografie.”
+    - Features a semi-transparent hero image of the photographer with the title, “Willkommen in meiner Welt der Fotografie.”
 
 - **Personal Story**
 
 ![Image](https://github.com/user-attachments/assets/eddf0c88-5016-41ad-911d-f42ce916309c)
 
-    ○ On the left: A section narrating the personal story.
-    ○ On the right: A portfolio Image
+    - On the left: A section narrating the personal story.
+    - On the right: A portfolio Image
 
 - **Experience**
 
   ![Image](https://github.com/user-attachments/assets/55c43628-38c5-4520-9afc-3674e01dd9b7)
 
-    ○ On the left: A section displaying photographer’s experience.
-    ○ On the right: A photo of an equipment, emphasizing professionalism.
+    - On the left: A section displaying photographer’s experience.
+    - On the right: A photo of an equipment, emphasizing professionalism.
 
 - **Core Skills**
 
   ![Image](https://github.com/user-attachments/assets/7aad193a-d4ea-4ad5-a2e0-f07cb50d2a22)
 
-    ○ A visually appealing grid of the photographer’s top 3 skills, each with a short description, is showcased in a “What I Do Best” section.
+    - A visually appealing grid of the photographer’s top 3 skills, each with a short description, is showcased in a “What I Do Best” section.
 
 - **Customer Testimonials**
   ![Image](https://github.com/user-attachments/assets/c77e9a87-54f2-4ad3-8c87-5adeda0d8fac)
 
-    ○ A carousel displays customer comments, enhancing credibility and trustworthiness.
+    - A carousel displays customer comments, enhancing credibility and trustworthiness.
 
 - **Responsive Design**
 
-    ○ The hero image, skill grid, and testimonial carousel adapt seamlessly across all devices.
+    - The hero image, skill grid, and testimonial carousel adapt seamlessly across all devices.
 
 
 ### Contact Page:
@@ -228,18 +242,18 @@ Offer intuitive navigation and easy-to-access contact options for inquiries and 
 
 - **Page Title**
 
-    ○ "Planen wir etwas Besonderes – lassen Sie uns Ihre Vision verwirklichen!" This sets an inviting and professional tone, emphasizing collaboration and creativity.
+    - "Planen wir etwas Besonderes – lassen Sie uns Ihre Vision verwirklichen!" This sets an inviting and professional tone, emphasizing collaboration and creativity.
 - **Dynamic Status Alerts**
 
-    ○ Success and error messages are displayed prominently at the top of the page in green and red, respectively.
+    - Success and error messages are displayed prominently at the top of the page in green and red, respectively.
 
 - **Responsive Design**
 
-    ○ The contact form is fully responsive, ensuring usability across all devices.
+    - The contact form is fully responsive, ensuring usability across all devices.
 
 - **Backend Integration**
 
-    ○ Emails are processed and sent to a predefined address using the `/api/send-email` API route, powered by SendGrid.
+    - Emails are processed and sent to a predefined address using the `/api/send-email` API route, powered by SendGrid.
 
 
 ---
