@@ -45,35 +45,35 @@ Offer intuitive navigation and easy-to-access contact options for inquiries and 
 
 - **Design Philosophy**
 
-  ○ The website embraces a minimalistic and elegant design with a warm cream background, soft accent colors, and modern typography to keep the focus on the photos. Subtle animations and interactive elements enrich the user experience while maintaining a professional tone.
+  - The website embraces a minimalistic and elegant design with a warm cream background, soft accent colors, and modern typography to keep the focus on the photos. Subtle animations and interactive elements enrich the user experience while maintaining a professional tone.
 
 - **Intuitive Navigation**
 
-  ○ The website structure is designed for ease of use, with a consistent header, footer, and navigation bar across all pages. Users can quickly find what they need without confusion.
+  - The website structure is designed for ease of use, with a consistent header, footer, and navigation bar across all pages. Users can quickly find what they need without confusion.
 
 - **Accessibility**
 
-  ○ Accessibility best practices are implemented, including proper alt text for images, semantic HTML, keyboard navigation support, and ARIA roles to enhance usability for all users, including those with disabilities.
+  - Accessibility best practices are implemented, including proper alt text for images, semantic HTML, keyboard navigation support, and ARIA roles to enhance usability for all users, including those with disabilities.
 
 - **Fast Loading Times**
 
-  ○ Optimized images, efficient code, and a lightweight design ensure fast loading times, providing a smooth browsing experience.
+  - Optimized images, efficient code, and a lightweight design ensure fast loading times, providing a smooth browsing experience.
 
 - **Responsive Design**
 
-  ○ Every page and feature adapts seamlessly to different screen sizes, ensuring usability on desktops, tablets, and smartphones.
+  - Every page and feature adapts seamlessly to different screen sizes, ensuring usability on desktops, tablets, and smartphones.
 
 - **Visual Consistency**
 
-  ○ A clean, cohesive design with consistent colors, typography, and spacing creates a professional and aesthetically pleasing experience.
+  - A clean, cohesive design with consistent colors, typography, and spacing creates a professional and aesthetically pleasing experience.
 
 - **Interactive Feedback**
 
-  ○ Interactive elements like hover animations, button highlights, and status messages provide users with immediate feedback, making the interface more engaging.
+  - Interactive elements like hover animations, button highlights, and status messages provide users with immediate feedback, making the interface more engaging.
 
 - **Error Prevention and Handling**
 
-  ○ Forms and interactive features include validation to prevent user errors, along with clear, actionable error messages when something goes wrong.
+  - Forms and interactive features include validation to prevent user errors, along with clear, actionable error messages when something goes wrong.
 
 ---
 
@@ -85,15 +85,15 @@ Offer intuitive navigation and easy-to-access contact options for inquiries and 
 
 - **Logo and Navigation Links**
 
-  ○ The header prominently displays the logo, title, and navigation links, ensuring consistent branding and intuitive access to key sections.
+  - The header prominently displays the logo, title, and navigation links, ensuring consistent branding and intuitive access to key sections.
 
 - **Global Accessibility**
 
-  ○ The header is visible and functional across all pages of the website, ensuring seamless navigation.
+  - The header is visible and functional across all pages of the website, ensuring seamless navigation.
 
 - **Responsive Design**
 
-  ○ The header adapts to various screen sizes, maintaining clear visibility and usability on desktops, tablets, and mobile devices.
+  - The header adapts to various screen sizes, maintaining clear visibility and usability on desktops, tablets, and mobile devices.
 
 
 ### Footer:
@@ -118,6 +118,9 @@ Offer intuitive navigation and easy-to-access contact options for inquiries and 
 
 
 ### Home Page:
+
+![Image](https://github.com/user-attachments/assets/9182a0c8-3ce8-40ff-a64d-59705aae92f3)
+
 - **Hero Section with Transparent Images**
 
     - Features three transparent hero images: a central image of the photographer with a camera, flanked by two images representing your photography themes.
@@ -125,11 +128,15 @@ Offer intuitive navigation and easy-to-access contact options for inquiries and 
 
 - **Featured Services Section**
 
+  ![Image](https://github.com/user-attachments/assets/02bbae71-4194-4b27-83ed-92e0ec95f0b3)
+
   - Highlights three primary photography services: Weddings, Portraits, and Events.
   - Each service is displayed with an image, a title, and a brief description to communicate the offerings clearly.
   - Ensures accessibility and attractiveness with visually appealing layout and content.
 
 - **Call-to-Action Section**
+
+  ![Image](https://github.com/user-attachments/assets/19c5043f-9e62-4a3c-b3db-c9cca93356cd)
 
   - Includes a prominent heading encouraging users to take action ("Planen Sie Ihr nächstes Shooting mit uns").
   - Provides two distinct call-to-action buttons:
