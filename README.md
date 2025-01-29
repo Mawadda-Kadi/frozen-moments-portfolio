@@ -296,6 +296,7 @@ Offer intuitive navigation and easy-to-access contact options for inquiries and 
 - React
 - SASS
 - Eslint
+- depcheck
 
 ---
 
@@ -318,7 +319,7 @@ Offer intuitive navigation and easy-to-access contact options for inquiries and 
 
 ---
 
-Credit:
+## Credit:
 - All the photos are from [iStock] https://www.istockphoto.com/de
 
 ---
