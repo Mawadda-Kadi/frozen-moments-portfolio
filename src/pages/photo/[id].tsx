@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import '@/styles/globals.scss';
 import styles from '@/styles/PhotoDetails.module.scss';
-import { photoData, Photo } from '@/data/photoData';
+import { photoData } from '@/data/photoData';
 
 
 const PhotoDetails = () => {
