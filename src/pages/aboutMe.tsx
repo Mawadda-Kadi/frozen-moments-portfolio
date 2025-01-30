@@ -19,15 +19,13 @@ const AboutMe: React.FC = () => {
         "Das war mit Abstand das beste Fotoshooting, das ich je hatte! Toller Service und atemberaubende Ergebnisse.",
     ];
 
+    const handleNext = () => {
+        setCurrentCommentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+    };
+
     const handlePrev = () => {
         setCurrentCommentIndex((prevIndex) =>
             prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
-        );
-    };
-
-    const handleNext = () => {
-        setCurrentCommentIndex((prevIndex) =>
-            prevIndex === testimonials.length - 1 ? 0 : prevIndex + 1
         );
     };
 

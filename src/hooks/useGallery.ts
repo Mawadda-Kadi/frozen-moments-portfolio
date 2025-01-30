@@ -21,7 +21,7 @@ export const useGallery = (photosPerPage: number) => {
     const [paginatedPhotos, setPaginatedPhotos] = useState<Photo[]>([]);
     const [totalPages, setTotalPages] = useState<number>(1);
 
-    // ✅ Debugging - Log category names in `photoData.ts`
+    // Debugging - Log category names in `photoData.ts`
     useEffect(() => {
         console.log("📸 Available Categories in photoData:", [...new Set(photoData.map(photo => photo.category))]);
     }, []);
@@ -40,20 +40,20 @@ export const useGallery = (photosPerPage: number) => {
         console.log("📸 Filtered Photos:", updatedPhotos);
 
         setFilteredPhotos(updatedPhotos);
-        setCurrentPage(1); // ✅ Reset pagination when category changes
+        setCurrentPage(1); // Reset pagination when category changes
     }, [selectedCategory]);
 
-    // ✅ Update paginated photos
+    // Update paginated photos
     useEffect(() => {
         const startIndex = (currentPage - 1) * photosPerPage;
         const paginated: Photo[] = filteredPhotos.slice(startIndex, startIndex + photosPerPage);
 
-        setPaginatedPhotos(paginated); // ✅ No more TypeScript error
+        setPaginatedPhotos(paginated);
         setTotalPages(Math.max(1, Math.ceil(filteredPhotos.length / photosPerPage))); // Prevents 0 totalPages
     }, [filteredPhotos, currentPage]);
 
     return {
-        photos: paginatedPhotos, // ✅ Updated paginated photos
+        photos: paginatedPhotos,
         totalPages,
         currentPage,
         setCurrentPage,
