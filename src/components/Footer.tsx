@@ -18,11 +18,11 @@ const Footer = () => {
                         onClick={() => setIsImpressumOpen(true)}
                         className={styles.footer_link}
                     >
-                        Impressum
+                        <span className={styles.impressum}>Impressum</span>
                     </a>
                     <a
                         href="https://facebook.com"
-                        className={styles.footer_icon}
+
                         target="_blank"
                         rel="noopener noreferrer"
                     >
