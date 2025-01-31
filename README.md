@@ -9,13 +9,13 @@ npm run dev
 ```
 
 - Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-- Open a deployed site:
+- Open a deployed site: frozen-moments-portfolio.vercel.app
 
 ---
 
 # Website Overview: Frozen Moments by Emma Schmidt
 
-**"Frozen Moments by Emma Schmidt"** is a professional photography portfolio website designed to showcase captivating event photography, including weddings, birthdays, baby showers, graduations, personal photoshoots, and business events. The website focuses on delivering an elegant, user-friendly experience while highlighting the photographer’s unique ability to preserve life’s most meaningful moments.
+[**"Frozen Moments by Emma Schmidt"**](frozen-moments-portfolio.vercel.app) is a professional photography portfolio website designed to showcase captivating event photography, including weddings, birthdays, baby showers, graduations, personal photoshoots, and business events. The website focuses on delivering an elegant, user-friendly experience while highlighting the photographer’s unique ability to preserve life’s most meaningful moments.
 
 ---
 
